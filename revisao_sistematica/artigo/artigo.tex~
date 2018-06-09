@@ -57,7 +57,8 @@
 % \documentclass[10pt,journal,compsoc]{../sty/IEEEtran}
 
 
-
+% Accentuation
+\usepackage[utf8]{inputenc}
 
 
 % Some very useful LaTeX packages include:
@@ -375,7 +376,9 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Bare Demo of IEEEtran.cls for\\ IEEE Computer Society Journals}
+\title{Técnicas de Aprendizagem Profunda na Análise Comportamental de
+  Motoristas: \\
+  Revisão Sistemática da Literatura}
 %
 %
 % author names and IEEE memberships
@@ -399,17 +402,7 @@
 % journal papers have the author affiliations above the "Manuscript
 % received ..."  text while in non-compsoc journals this is reversed. Sigh.
 
-\author{Michael~Shell,~\IEEEmembership{Member,~IEEE,}
-        John~Doe,~\IEEEmembership{Fellow,~OSA,}
-        and~Jane~Doe,~\IEEEmembership{Life~Fellow,~IEEE}% <-this % stops a space
-\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem M. Shell was with the Department
-of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
-GA, 30332.\protect\\
-% note need leading \protect in front of \\ to get a newline within \thanks as
-% \\ is fragile and will error, could use \hfil\break instead.
-E-mail: see http://www.michaelshell.org/contact.html
-\IEEEcompsocthanksitem J. Doe and J. Doe are with Anonymous University.}% <-this % stops an unwanted space
-\thanks{Manuscript received April 19, 2005; revised August 26, 2015.}}
+\author{Lucas~Lima}% <-this % stops a space
 
 % note the % following the last \IEEEmembership and also \thanks - 
 % these prevent an unwanted space from occurring between the last author name
@@ -432,8 +425,8 @@ E-mail: see http://www.michaelshell.org/contact.html
 
 
 % The paper headers
-\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
-{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Computer Society Journals}
+%\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
+%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Computer Society Journals}
 % The only time the second header will appear is for the odd numbered pages
 % after the title page when using the twoside option.
 % 
@@ -471,13 +464,15 @@ E-mail: see http://www.michaelshell.org/contact.html
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
-\begin{abstract}
-The abstract goes here.
+  \begin{abstract}
+    Técnicas de aprendizagem profunda têm atraído bastante atenção por
+    sua capacidade de analisar dados de grandes dimensionalidades e baixa correlação extrair informações relevantes, ao contexto que são aplicados, 
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-Computer Society, IEEE, IEEEtran, journal, \LaTeX, paper, template.
+Motoristas, Análise Comportamental, Deep Learning, Aprendizagem
+Profunda
 \end{IEEEkeywords}}
 
 
