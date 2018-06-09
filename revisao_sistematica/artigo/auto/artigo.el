@@ -26,6 +26,6 @@
     "sec:introduction")
    (LaTeX-add-bibliographies
     "IEEEabrv"
-    "bib/referencias"))
+    "bib/scopus"))
  :latex)
 
