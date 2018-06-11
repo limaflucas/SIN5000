@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.6.7)  11 JUN 2018 03:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.6.7)  11 JUN 2018 04:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -650,36 +650,49 @@ s que
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 581.
-(./artigo.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 846.
+(./artigo.bbl
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 44.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8.03> on input line 44.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.62097> on input line 44.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <4.015> on input line 44.
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--46
+\OT1/ppl/m/n/8.03 eid = 2-[]s2 . 0-[]85042305285 & doi = 10 . 3390 % 2fs1802060
+8 & partnerID =
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 847.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 846.
-
-(./artigo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 846.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 846.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 846.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 847.
+ (./artigo.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 847.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 847.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 847.
  ) 
 Here is how much of TeX's memory you used:
- 5867 strings out of 492982
- 90477 string characters out of 6138580
- 180776 words of memory out of 5000000
- 9369 multiletter control sequences out of 15000+600000
+ 5883 strings out of 492982
+ 90729 string characters out of 6138580
+ 181805 words of memory out of 5000000
+ 9384 multiletter control sequences out of 15000+600000
  43662 words of font info for 92 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 34i,8n,44p,233b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,8n,44p,233b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helveti
 c/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/s
 hare/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texmf-dist/fon
 ts/type1/urw/zapfding/uzdr.pfb>
-Output written on artigo.pdf (1 page, 64527 bytes).
+Output written on artigo.pdf (1 page, 67281 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
+ 103 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
