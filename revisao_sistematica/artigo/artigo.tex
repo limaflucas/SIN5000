@@ -57,10 +57,10 @@
 % \documentclass[10pt,journal,compsoc]{../sty/IEEEtran}
 
 
-% Accentuation
+% % Personal packages
+% Support for accentuation
 \usepackage[utf8]{inputenc}
-
-% Bookmarks
+% Adding pdf bookmark
 \usepackage{bookmark}
 
 % Some very useful LaTeX packages include:
@@ -131,22 +131,22 @@
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \ifCLASSINFOpdf
-   \usepackage[pdftex]{graphicx}
+  % \usepackage[pdftex]{graphicx}
   % declare the path(s) where your graphic files are
-   \graphicspath{{static/}}
+  % \graphicspath{{../pdf/}{../jpeg/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
-   \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
 \else
   % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
   % will default to the driver specified in the system graphics.cfg if no
   % driver is specified.
-   \usepackage[dvips]{graphicx}
+  % \usepackage[dvips]{graphicx}
   % declare the path(s) where your graphic files are
-   \graphicspath{{static/}}
+  % \graphicspath{{../eps/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
-   \DeclareGraphicsExtensions{.eps}
+  % \DeclareGraphicsExtensions{.eps}
 \fi
 % graphicx was written by David Carlisle and Sebastian Rahtz. It is
 % required if you want graphics, photos, etc. graphicx.sty is already
@@ -175,13 +175,13 @@
 
 % *** MATH PACKAGES ***
 %
-\usepackage{amsmath}
+%\usepackage{amsmath}
 % A popular package from the American Mathematical Society that provides
 % many useful and powerful commands for dealing with mathematics.
 %
 % Note that the amsmath package sets \interdisplaylinepenalty to 10000
 % thus preventing page breaks from occurring within multiline equations. Use:
-\interdisplaylinepenalty=2500
+%\interdisplaylinepenalty=2500
 % after loading amsmath to restore such page breaks as IEEEtran.cls normally
 % does. amsmath.sty is already installed on most LaTeX systems. The latest
 % version and documentation can be obtained at:
@@ -193,7 +193,7 @@
 
 % *** SPECIALIZED LIST PACKAGES ***
 %
-\usepackage{algorithmic}
+%\usepackage{algorithmic}
 % algorithmic.sty was written by Peter Williams and Rogerio Brito.
 % This package provides an algorithmic environment fo describing algorithms.
 % You can use the algorithmic environment in-text or within a figure
@@ -213,7 +213,7 @@
 
 % *** ALIGNMENT PACKAGES ***
 %
-\usepackage{array}
+%\usepackage{array}
 % Frank Mittelbach's and David Carlisle's array.sty patches and improves
 % the standard LaTeX2e array and tabular environments to provide better
 % appearance and additional user controls. As the default LaTeX2e table
@@ -233,11 +233,11 @@
 
 
 % *** SUBFIGURE PACKAGES ***
-\ifCLASSOPTIONcompsoc
-  \usepackage[caption=false,font=footnotesize,labelfont=sf,textfont=sf]{subfig}
-\else
-  \usepackage[caption=false,font=footnotesize]{subfig}
-\fi
+%\ifCLASSOPTIONcompsoc
+%  \usepackage[caption=false,font=footnotesize,labelfont=sf,textfont=sf]{subfig}
+%\else
+%  \usepackage[caption=false,font=footnotesize]{subfig}
+%\fi
 % subfig.sty, written by Steven Douglas Cochran, is the modern replacement
 % for subfigure.sty, the latter of which is no longer maintained and is
 % incompatible with some LaTeX packages including fixltx2e. However,
@@ -348,7 +348,7 @@
 
 % *** PDF, URL AND HYPERLINK PACKAGES ***
 %
-\usepackage{url}
+%\usepackage{url}
 % url.sty was written by Donald Arseneau. It provides better support for
 % handling and breaking URLs. url.sty is already installed on most LaTeX
 % systems. The latest version and documentation can be obtained at:
@@ -404,8 +404,7 @@
 % journal papers have the author affiliations above the "Manuscript
 % received ..."  text while in non-compsoc journals this is reversed. Sigh.
 
-\author{Lucas~Lima}% <-this % stops a space
-
+\author{Lucas~Lima}
 % note the % following the last \IEEEmembership and also \thanks - 
 % these prevent an unwanted space from occurring between the last author name
 % and the end of the author line. i.e., if you had this:
@@ -465,22 +464,17 @@
 % command as these need to go into the title area created by \maketitle.
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
-
 \renewcommand{\abstractname}{Resumo}
 \IEEEtitleabstractindextext{%
   \begin{abstract}
     Técnicas de aprendizagem profunda têm atraído bastante atenção por
-    sua capacidade de analisar dados de grandes dimensionalidades e
-    baixa correlação extrair informações relevantes, ao contexto que
-    são aplicados,
-    \cite{Liu2018}
+    sua capacidade de analisar dados de grandes dimensionalidades e baixa correlação extrair informações relevantes, ao contexto que são aplicados.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \renewcommand{\IEEEkeywordsname}{Palavras-chave}
 \begin{IEEEkeywords}
-Motoristas, Análise Comportamental, Deep Learning, Aprendizagem
-Profunda
+Motorista, Análise Comportamental, Deep Learning, Aprendizagem Profunda
 \end{IEEEkeywords}}
 
 
@@ -514,32 +508,218 @@ Profunda
 
 
 \IEEEraisesectionheading{\section{Introdução}\label{sec:introduction}}
-\IEEEPARstart{T}{his}
+% Computer Society journal (but not conference!) papers do something unusual
+% with the very first section heading (almost always called "Introduction").
+% They place it ABOVE the main text! IEEEtran.cls does not automatically do
+% this for you, but you can achieve this effect with the provided
+% \IEEEraisesectionheading{} command. Note the need to keep any \label that
+% is to refer to the section immediately after \section in the above as
+% \IEEEraisesectionheading puts \section within a raised box.
 
-\subsection{Estrutura do documento}
-Subsection text here.
+
+
+
+% The very first letter is a 2 line initial drop letter followed
+% by the rest of the first word in caps (small caps for compsoc).
+% 
+% form to use if the first word consists of a single letter:
+% \IEEEPARstart{A}{demo} file is ....
+% 
+% form to use if you need the single drop letter followed by
+% normal text (unknown if ever used by the IEEE):
+% \IEEEPARstart{A}{}demo file is ....
+% 
+% Some journals put the first two words in caps:
+% \IEEEPARstart{T}{his demo} file is ....
+% 
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+% You must have at least 2 lines in the paragraph with the drop letter
+% (should never be an issue)
+% needed in second column of first page if using \IEEEpubid
+%\IEEEpubidadjcol
+
+% \IEEEPARstart{A}{revisão} sistemática de literatura, apesar de ser um trabalho extenso
+% e árduo, é útil para mapear e entender o estado da arte sobre uma área
+% ou tema específico. Neste trabalho, a revisão sistemática de literatura auxiliou no
+% mapeamento de trabalhos onde houve a aplicação de técnicas exclusivas
+% sobre uma área do conhecimento específica: a utilização de métodos de
+% aprendizagem profunda, aplicados na análise
+% comportamental de motoristas.\par
+
+\IEEEPARstart{A}{analise} comportamental, dentro  da inteligência artificial, é um
+campo bem difundido e estudado com diversas pesquisas explorando as
+suas aplicabilidades com o uso de diversas técnicas de aprendizagem,
+como o aprendizado superficial, \textit{shallow learning}, a lógica
+difusa e o aprendizado profundo, mais conhecido como \textit{deep
+  learning}. \textit{Deep learning} pode ser definido como um método que aplica
+técnicas de aprendizado superficial não lineares e encadeadas com
+múltiplos níveis com a capacidade de aprender tarefas complexas a partir de dados não
+tratados, LeCunn \emph{et~al.}\cite{Lecun2015436}.
+
+O comportamento de condução pode ser definido como uma sequência de
+ações realizadas uma a uma quando há interação entre o motorista e o
+veículo \cite{Liu2016}. Neste trabalho
+utilizamos a mesma definição, mas com uma especifidade ainda maior,
+além de ser uma sequência de ações, executadas uma a uma, elas devem
+ocorrer por um período de tempo limitado e ser mensuráveis através de
+sensores automotivos instalados no veículo.
+
+As sessões seguintes estruturam este trabalho conforme a ordem: na seção
+\ref{sec:protocolo} o protocolo da pesquisa é detalhado, bem como seu
+objetivo e as questões de pesquisa; na seção \ref{sec:resultados}
+são apresentados os resultados obtidos; a discussão sobre o tema
+ocorre na seção \ref{sec:discussao}; a conclusão deste trabalho e as
+ameças à sua validade, são expostos nas seções \ref{sec:conclusao} e
+\ref{sec:validade}, respectivamente.
 
 \section{Protocolo de revisão}
+\label{sec:protocolo}
+Nesta seção são apresentadas todas as diretrizes que guiaram o
+processo de revisão sistemática da literatura seguindo as diretrizes
+documentadas e sugeridas pela Kitchenham \cite{kitchenham2007}.
 \subsection{Objetivos da revisão sistemática de literatura}
+Esta revisão sistemática da literatura tem como objetivo coletar,
+organizar e entender o estado da arte de projetos de pesquisa que
+explorem exclusivamente: a aplicação de métodos de aprendizagem
+profunda na análise idiossincrática de condutores veiculares.
+
+Além de propiciar avanços significativos nos campos de reconhecimento
+de imagens e reconhecimento da fala, a aplicação
+de \textit{deep learning} também traz melhores resultados quando
+aplicada em conjuntos de dados grandes e de alta dimensionalidade,
+quando comparada aos métodos tradicionais de aprendizado superficial
+\cite{Lecun2015436}. Para este trabalho esta técnica é particularmente
+importante pois as características do conjunto de dados atende a
+descrição acima e também é uma série temporal, fato que adiciona mais
+complexidade na fase de aprendizagem.
+
 
 \subsection{Questões de pesquisa}
 
-\subsection{Definição das fontes de pesquisa}
+\subsection{Definição das fontes de pesquisa e string de busca}
 
 \subsection{Critérios de inclusão e exclusão}
-
+\label{sec:protocolo:inclusao}
 
 \section{Resultados da pesquisa}
-\subsection{Estado atual da aplicação de técnicas de aprendizagem profunda na análise comportamental de motoristas}
+\label{sec:resultados}
+\subsection{Estado da arte}
 
 
 \section{Discussão dos resultados}
-
+\label{sec:discussao}
 
 \section{Conclusão e oportunidades}
-
+\label{sec:conclusao}
 
 \section{Ameaças a validade deste trabalho}
+\label{sec:validade}
+
+% An example of a floating figure using the graphicx package.
+% Note that \label must occur AFTER (or within) \caption.
+% For figures, \caption should occur after the \includegraphics.
+% Note that IEEEtran v1.7 and later has special internal code that
+% is designed to preserve the operation of \label within \caption
+% even when the captionsoff option is in effect. However, because
+% of issues like this, it may be the safest practice to put all your
+% \label just after \caption rather than within \caption{}.
+%
+% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
+% option should be used if it is desired that the figures are to be
+% displayed while in draft mode.
+%
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=2.5in]{myfigure}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+%\caption{Simulation results for the network.}
+%\label{fig_sim}
+%\end{figure}
+
+% Note that the IEEE typically puts floats only at the top, even when this
+% results in a large percentage of a column being occupied by floats.
+% However, the Computer Society has been known to put floats at the bottom.
+
+
+% An example of a double column floating figure using two subfigures.
+% (The subfig.sty package must be loaded for this to work.)
+% The subfigure \label commands are set within each subfloat command,
+% and the \label for the overall figure must come after \caption.
+% \hfil is used as a separator to get equal spacing.
+% Watch out that the combined width of all the subfigures on a 
+% line do not exceed the text width or a line break will occur.
+%
+%\begin{figure*}[!t]
+%\centering
+%\subfloat[Case I]{\includegraphics[width=2.5in]{box}%
+%\label{fig_first_case}}
+%\hfil
+%\subfloat[Case II]{\includegraphics[width=2.5in]{box}%
+%\label{fig_second_case}}
+%\caption{Simulation results for the network.}
+%\label{fig_sim}
+%\end{figure*}
+%
+% Note that often IEEE papers with subfigures do not employ subfigure
+% captions (using the optional argument to \subfloat[]), but instead will
+% reference/describe all of them (a), (b), etc., within the main caption.
+% Be aware that for subfig.sty to generate the (a), (b), etc., subfigure
+% labels, the optional argument to \subfloat must be present. If a
+% subcaption is not desired, just leave its contents blank,
+% e.g., \subfloat[].
+
+
+% An example of a floating table. Note that, for IEEE style tables, the
+% \caption command should come BEFORE the table and, given that table
+% captions serve much like titles, are usually capitalized except for words
+% such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to
+% and up, which are usually not capitalized unless they are the first or
+% last word of the caption. Table text will default to \footnotesize as
+% the IEEE normally uses this smaller font for tables.
+% The \label must come after \caption as always.
+%
+%\begin{table}[!t]
+%% increase table row spacing, adjust to taste
+%\renewcommand{\arraystretch}{1.3}
+% if using array.sty, it might be a good idea to tweak the value of
+% \extrarowheight as needed to properly center the text within the cells
+%\caption{An Example of a Table}
+%\label{table_example}
+%\centering
+%% Some packages, such as MDW tools, offer better commands for making tables
+%% than the plain LaTeX2e tabular which is used here.
+%\begin{tabular}{|c||c|}
+%\hline
+%One & Two\\
+%\hline
+%Three & Four\\
+%\hline
+%\end{tabular}
+%\end{table}
+
+
+% Note that the IEEE does not put floats in the very first column
+% - or typically anywhere on the first page for that matter. Also,
+% in-text middle ("here") positioning is typically not used, but it
+% is allowed and encouraged for Computer Society conferences (but
+% not Computer Society journals). Most IEEE journals/conferences use
+% top floats exclusively. 
+% Note that, LaTeX2e, unlike IEEE journals/conferences, places
+% footnotes above bottom floats. This can be corrected via the
+% \fnbelowfloat command of the stfloats package.
+
+
+
+
+%\section{Conclusion}
+%The conclusion goes here.
+
+
+
+
 
 % if have a single appendix:
 %\appendix[Proof of the Zonklar Equations]
@@ -556,17 +736,17 @@ Subsection text here.
 %
 
 
-%\appendices
-%\section{Proof of the First Zonklar Equation}
-%Appendix one text goes here.
+% \appendices
+% \section{Proof of the First Zonklar Equation}
+% Appendix one text goes here.
 
 % you can choose not to have a title for an appendix
 % if you want by leaving the argument blank
-%\section{}
-%Appendix two text goes here.
+% \section{}
+% Appendix two text goes here.
 
 
-% use section* for acknowledgment
+% % use section* for acknowledgment
 % \ifCLASSOPTIONcompsoc
 %   % The Computer Society usually uses the plural form
 %   \section*{Acknowledgments}
@@ -576,14 +756,14 @@ Subsection text here.
 % \fi
 
 
-% The authors would like to thank...
+%The authors would like to thank...
 
 
-% % Can use something like this to put references on a page
-% % by themselves when using endfloat and the captionsoff option.
-% \ifCLASSOPTIONcaptionsoff
-%   \newpage
-% \fi
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
 
 
 
@@ -602,6 +782,7 @@ Subsection text here.
 % http://mirror.ctan.org/biblio/bibtex/contrib/doc/
 % The IEEEtran BibTeX style support page is at:
 % http://www.michaelshell.org/tex/ieeetran/bibtex/
+\renewcommand\refname{Referências}
 \bibliographystyle{IEEEtran}
 % argument is your BibTeX string definitions and bibliography database(s)
 \bibliography{IEEEabrv,bib/scopus}
@@ -609,13 +790,13 @@ Subsection text here.
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-% \begin{thebibliography}{1}
+%\begin{thebibliography}{1}
 
 % \bibitem{IEEEhowto:kopka}
 % H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 %   0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
 
-% \end{thebibliography}
+%\end{thebibliography}
 
 % biography section
 % 

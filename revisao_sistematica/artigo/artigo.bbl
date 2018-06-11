@@ -21,13 +21,18 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{Liu2018}
-\BIBentryALTinterwordspacing
-H.~Liu, T.~Taniguchi, K.~Takenaka, and T.~Bando, ``Defect-repairable latent
-  feature extraction of driving behavior via a deep sparse autoencoder,''
-  \emph{Sensors (Switzerland)}, vol.~18, no.~2, 2018, cited By 0. [Online].
-  Available:
-  \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85042305285&doi=10.3390%2fs18020608&partnerID=40&md5=9c3938225b4d8302ab95d4846006abd4}
-\BIBentrySTDinterwordspacing
+\bibitem{Lecun2015436}
+Y.~Lecun, Y.~Bengio, and G.~Hinton, ``Deep learning,'' \emph{Nature}, vol. 521,
+  no. 7553, pp. 436--444, 2015.
+
+\bibitem{Liu2016}
+H.~Liu, T.~Taniguchi, K.~Takenaka, Y.~Tanaka, and T.~Bando, ``Reducing the
+  negative effect of defective data on driving behavior segmentation via a deep
+  sparse autoencoder,'' 2016.
+
+\bibitem{kitchenham2007}
+B.~Kitchenham and S.~Charters, ``Guidelines for performing systematic
+  literature reviews in software engineering,'' \emph{Technical Report EBSE
+  2007-001, Keele University, UK}, 2007.
 
 \end{thebibliography}

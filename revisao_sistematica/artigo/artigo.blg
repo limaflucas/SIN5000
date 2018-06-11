@@ -12,46 +12,48 @@ Database file #2: bib/scopus.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty booktitle in Liu2016
 
 Done.
-You've used 1 entry,
+You've used 3 entries,
             4087 wiz_defined-function locations,
-            1353 strings with 17947 characters,
-and the built_in function-call counts, 742 in all, are:
-= -- 58
-> -- 17
-< -- 2
-+ -- 8
-- -- 4
-* -- 56
-:= -- 149
-add.period$ -- 2
-call.type$ -- 1
-change.case$ -- 2
-chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 49
-empty$ -- 45
-format.name$ -- 5
-if$ -- 142
+            1364 strings with 18154 characters,
+and the built_in function-call counts, 1920 in all, are:
+= -- 138
+> -- 50
+< -- 10
++ -- 26
+- -- 10
+* -- 103
+:= -- 308
+add.period$ -- 6
+call.type$ -- 3
+change.case$ -- 3
+chr.to.int$ -- 21
+cite$ -- 4
+duplicate$ -- 142
+empty$ -- 159
+format.name$ -- 13
+if$ -- 425
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 11
-newline$ -- 28
-num.names$ -- 1
-pop$ -- 20
+int.to.str$ -- 3
+missing$ -- 26
+newline$ -- 32
+num.names$ -- 3
+pop$ -- 69
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 50
+skip$ -- 142
 stack$ -- 0
-substring$ -- 3
-swap$ -- 37
-text.length$ -- 2
+substring$ -- 52
+swap$ -- 99
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 1
-warning$ -- 0
-while$ -- 1
-width$ -- 2
-write$ -- 36
+type$ -- 3
+warning$ -- 1
+while$ -- 6
+width$ -- 4
+write$ -- 48
+(There was 1 warning)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.6.7)  9 JUN 2018 03:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.6.7)  11 JUN 2018 03:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -584,135 +584,6 @@ File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-)
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 99.
-
-(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen130
-\Gin@req@width=\dimen131
-)
-(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip45
-
-For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
-
-(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks18
-\ex@=\dimen132
-))
-(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen133
-)
-(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count105
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count106
-\leftroot@=\count107
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count108
-\DOTSCASE@=\count109
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
-\big@size=\dimen134
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count110
-\c@MaxMatrixCols=\count111
-\dotsspace@=\muskip11
-\c@parentequation=\count112
-\dspbrk@lvl=\count113
-\tag@help=\toks19
-\row@=\count114
-\column@=\count115
-\maxfields@=\count116
-\andhelp@=\toks20
-\eqnshift@=\dimen135
-\alignsep@=\dimen136
-\tagshift@=\dimen137
-\tagwidth@=\dimen138
-\totwidth@=\dimen139
-\lineht@=\dimen140
-\@envbody=\toks21
-\multlinegap=\skip46
-\multlinetaggap=\skip47
-\mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
-)
-(/usr/share/texmf-dist/tex/latex/algorithms/algorithmic.sty
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-
-(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\c@ALC@unique=\count117
-\c@ALC@line=\count118
-\c@ALC@rem=\count119
-\c@ALC@depth=\count120
-\ALC@tlm=\skip48
-\algorithmicindent=\skip49
-)
-(/usr/share/texmf-dist/tex/latex/tools/array.sty
-Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen141
-\extrarowheight=\dimen142
-\NC@list=\toks23
-\extratabsurround=\skip50
-\backup@length=\skip51
-)
-(/usr/share/texmf-dist/tex/latex/subfig/subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-
-(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen143
-\captionmargin@=\dimen144
-\captionwidth=\dimen145
-\caption@tempdima=\dimen146
-\caption@indent=\dimen147
-\caption@parindent=\dimen148
-\caption@hangindent=\dimen149
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-)
-\c@KVtest=\count121
-\sf@farskip=\skip52
-\sf@captopadj=\dimen150
-\sf@capskip=\skip53
-\sf@nearskip=\skip54
-\c@subfigure=\count122
-\c@subfigure@save=\count123
-\c@lofdepth=\count124
-\c@subtable=\count125
-\c@subtable@save=\count126
-\c@lotdepth=\count127
-\sf@top=\skip55
-\sf@bottom=\skip56
 ) (./artigo.aux)
 \openout1 = `artigo.aux'.
 
@@ -732,7 +603,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 373.
 LaTeX Font Info:    ... okay on input line 373.
 
 -- Lines per column: 61 (exact).
-\AtBeginShipoutBox=\box30
+\AtBeginShipoutBox=\box28
 Package hyperref Info: Link coloring OFF on input line 373.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -740,104 +611,75 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count128
+\c@section@level=\count105
 )
 LaTeX Info: Redefining \ref on input line 373.
 LaTeX Info: Redefining \pageref on input line 373.
 LaTeX Info: Redefining \nameref on input line 373.
-
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count129
-\scratchdimen=\dimen151
-\scratchbox=\box31
-\nofMPsegments=\count130
-\nofMParguments=\count131
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count132
-\MPscratchDim=\dimen152
-\MPnumerator=\count133
-\makeMPintoPDFobject=\count134
-\everyMPtoPDFconversion=\toks25
-) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.jpeg,.png,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 489.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 483.
 
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 489.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 483.
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 48
-9.
-LaTeX Font Info:    Try loading font information for U+pzd on input line 489.
+3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <11.04124> on input line 483.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.72884> on input line 483.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.52061> on input line 483.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 483.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 516.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 510.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <11.04124> not available
 
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 516.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 519.
- (./artigo.bbl
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 30.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 510.
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--32
-\OT1/ppl/m/n/8.03 eid = 2-[]s2 . 0-[]85042305285 & doi = 10 . 3390 % 2fs1802060
-8 & partnerID =
+Underfull \hbox (badness 1383) in paragraph at lines 578--581
+\OT1/ppl/m/n/9.53561 Nesta se[][]ao s[]ao ap-re-sen-tadas to-das as di-re-trize
+s que
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 663.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 581.
+(./artigo.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 844.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 663.
- (./artigo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 663.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 663.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 663.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 844.
+
+(./artigo.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 844.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 844.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 844.
  ) 
 Here is how much of TeX's memory you used:
- 8162 strings out of 492982
- 123521 string characters out of 6138580
- 215523 words of memory out of 5000000
- 11599 multiletter control sequences out of 15000+600000
- 44361 words of font info for 97 fonts, out of 8000000 for 9000
+ 5867 strings out of 492982
+ 90477 string characters out of 6138580
+ 181776 words of memory out of 5000000
+ 9369 multiletter control sequences out of 15000+600000
+ 43662 words of font info for 92 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,8n,44p,349b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,8n,44p,233b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helveti
 c/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/s
 hare/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texmf-dist/fon
 ts/type1/urw/zapfding/uzdr.pfb>
-Output written on artigo.pdf (1 page, 55461 bytes).
+Output written on artigo.pdf (1 page, 64382 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
