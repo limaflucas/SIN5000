@@ -4,12 +4,13 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("IEEEtran" "10pt" "journal" "compsoc")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("inputenc" "utf8") ("enumitem" "inline") ("algorithm2e" "ruled" "vlined") ("cite" "nocompress") ("graphicx" "pdftex" "dvips")))
+                     '(("inputenc" "utf8") ("babel" "brazilian") ("enumitem" "inline") ("algorithm2e" "ruled" "vlined") ("cite" "nocompress") ("graphicx" "pdftex" "dvips")))
    (TeX-run-style-hooks
     "latex2e"
     "IEEEtran"
     "IEEEtran10"
     "inputenc"
+    "babel"
     "bookmark"
     "enumitem"
     "algorithm2e"
