@@ -64,6 +64,8 @@
 \usepackage{bookmark}
 % Inline lists
 \usepackage[inline]{enumitem}
+% Fancy way to display text
+\usepackage[ruled, vlined]{algorithm2e}
 
 % Some very useful LaTeX packages include:
 % (uncomment the ones you want to load)
@@ -133,22 +135,22 @@
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
+   \usepackage[pdftex]{graphicx}
   % declare the path(s) where your graphic files are
-  % \graphicspath{{../pdf/}{../jpeg/}}
+   \graphicspath{{static/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+   \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
 \else
   % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
   % will default to the driver specified in the system graphics.cfg if no
   % driver is specified.
-  % \usepackage[dvips]{graphicx}
+   \usepackage[dvips]{graphicx}
   % declare the path(s) where your graphic files are
-  % \graphicspath{{../eps/}}
+   \graphicspath{{static/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.eps}
+   \DeclareGraphicsExtensions{.eps}
 \fi
 % graphicx was written by David Carlisle and Sebastian Rahtz. It is
 % required if you want graphics, photos, etc. graphicx.sty is already
@@ -578,18 +580,39 @@ ameaças à sua validade são expostos nas seções \ref{sec:conclusao} e
 \section{Protocolo de revisão}
 \label{sec:protocolo}
 Nesta seção são apresentadas todas as diretrizes que guiaram o
-processo de revisão sistemática da literatura a fim de atingir os
+processo de revisão sistemática da literatura, a fim de atingir os
 objetos explicitados na seção \ref{sec:protocolo:objetivos}.
 
 O modelo de trabalho foi baseado nas diretrizes
-documentadas pela Kitchenham \cite{kitchenham2007} e foi executado
-seguindo três macro fases:
+documentadas pela Kitchenham \cite{kitchenham2007} e executado
+seguindo três macro etapas:
 \begin{enumerate*}
 \item Levantamento bibliográfico;
-\item Filtragem dos artigos;
+\item Seleção dos artigos;
 \item Análise dos estudos selecionados
-\end{enumerate*}. A imagem XYZ ilustra com maior riqueza de detalhes
-as principais atividades realizadas dentro de cada uma das fases listadas.
+\end{enumerate*}. A imagem \ref{fig:etapas} demonstra a sequência iterativa de
+atividades realizadas dentro de cada macro etapa.
+
+O levantamento bibliográfico foi essencial na definição e refinamento da
+\textit{string} de busca, discutida com maiores detalhes no item
+\ref{sec:protocolo:string}; e o uso dos filtros de pesquisa serviram
+para delimitar a abrangência e destacar os resultados que seriam
+melhor aproveitados para o cumprimento do objetivo deste trabalho. A etapa
+de seleção encarregou-se da curadoria do material gerado pelo estágio
+anterior. Àqueles artigos que não infringiram nenhum dos critérios de
+exclusão foram reservados para uma análise mais minuciosa e crítica. A
+conclusão da última macro etapa que consistiu na análise crítica e mapeamento das
+técnicas de aprendizagem profunda na análise comportamental de
+motoristas, resultou na seção \ref{sec:discussao}.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth, height=6cm]{etapas14}
+\caption{Detalhamento das três macro etapas utilizadas para a
+  confecção desta revisão sistemática da literatura.}
+\label{fig:etapas}
+\end{figure*}
+
 \subsection{Objetivos da revisão sistemática de literatura}
 \label{sec:protocolo:objetivos}
 A revisão sistemática da literatura tem como objetivo coletar,
@@ -610,6 +633,86 @@ classificadas como séries temporais multidimensionais
 \cite{Liu2018}. Aplicada a este contexto, a série de dados descreve o estado atual do veículo, dado um momento
 específico no tempo, e é composta por medições de diversos sensores
 como a aceleração, a velocidade, o ângulo do volante, dentre outras mais.
+
+\subsection{\textit{String} de busca}
+\label{sec:protocolo:string}
+A \textit{string} de busca constitui uma das principais partes de uma
+revisão sistemática da literatura, pois é a partir dela que todo o
+estudo será conduzido. Caso o conjunto de termos escolhidos não
+consiga expressar plenamente a necessidade da pesquisa, os resultados
+oriundos das bases de pesquisa não estarão condizentes com as necessidades do
+pesquisador. Justamente para evitar o cenário acima, a cadeia de pesquisa
+empregada neste estudo foi dividida e evoluída iterativamente com o
+auxílio das plataformas Scopus e Web of Science. As duas partes da
+\textit{string} passaram pelo mesmo processo de amadurecimento.
+
+Primeiro um termo genérico foi apresentado às plataformas
+supracitadas e, a partir das palavras-chaves retornadas, novos termos
+foram sendo incorporados à cadeia original. A quantidade total de documentos
+retornados e a quantidade de documentos por área do conhecimento foram
+as métricas utilizadas para avaliar a inclusão de novos
+termos.
+
+A \textit{query} de busca pelas técnicas de aprendizagem profunda
+contem 30 termos. Sem a aplicação de nenhum filtro nos resultados, 43.272 artigos foram
+retornados pelo Scopus e 24.928 pela Web of Science, uma diferença de
+42,39\%. Já a busca pelo comportamento do motorista possui 45
+termos ao todo e, também sem a aplicação de filtros, a busca nas
+mesmas bases retornaram 36.968 e 21.548 artigos, respectivamente. Ambas as \textit{queries} podem ser
+consultadas nas tabelas \ref{algo:deeplearning} e
+\ref{algo:driverbehavior}.
+
+Quando a junção das duas cadeias é feita pelo conector lógico
+\emph{\textbf{E}}, surge uma nova \textit{string} de busca com 75 termos. Quando esta nova
+\textit{string} é apresentada às plataformas de pesquisa, os
+resultados são reduzidos para 161 artigos no Scopus e 83 na Web of
+Science.
+
+\begin{algorithm}
+  \label{algo:deeplearning}
+  \renewcommand{\algorithmcfname}{String de busca}
+  \caption{Busca por técnicas de \textit{deep learning} considerando o
+  título, resumo e palavras-chave}
+  \SetAlgoLined
+  \DontPrintSemicolon
+  \FuncSty{TITLE-ABS-KEY:}\;
+  \Indp
+  \FuncArgSty{deep learning} \ArgSty{OR} \ArgSty{convolutional
+    neural network}  \ArgSty{OR}  \ArgSty{convolution* network}
+  \ArgSty{OR}  \ArgSty{deep neural network}  \ArgSty{OR}  \ArgSty{auto
+    encoder}  \ArgSty{OR}  \ArgSty{deep belief network}  \ArgSty{OR}
+  \ArgSty{convolutional network}  \ArgSty{OR}  \ArgSty{cnn}
+  \ArgSty{OR}  \ArgSty{dbn}  \ArgSty{OR}  \ArgSty{deep architecture}
+  \ArgSty{OR}  \ArgSty{autoencoder}  \ArgSty{OR}  \ArgSty{deep
+    bayesian network}  \ArgSty{OR}  \ArgSty{deep * network}
+  \ArgSty{OR}  \ArgSty{deep convolution network}  \ArgSty{OR}
+  \ArgSty{deep convolutional network}  \ArgSty{OR}  \ArgSty{deep
+    neural convolutional network}  \ArgSty{OR}  \ArgSty{deep neural
+    convolution network}  \ArgSty{OR}  \ArgSty{deep autoencoder}
+  \ArgSty{OR}  \ArgSty{deep auto encoder}  \ArgSty{OR}  \ArgSty{deep *
+    autoencoder}  \ArgSty{OR}  \ArgSty{deep * auto encoder}
+  \ArgSty{OR}  \ArgSty{dnn}  \ArgSty{OR}  \ArgSty{deep multilayer
+    neural network}  \ArgSty{OR}  \ArgSty{deep artificial neural
+    network}  \ArgSty{OR}  \ArgSty{deep boltzmann machine}
+  \ArgSty{OR}  \ArgSty{deep multitask learning}  \ArgSty{OR}
+  \ArgSty{deep extreme learning machine}  \ArgSty{OR}  \ArgSty{deep
+    recurrent neural network}  \ArgSty{OR}  \ArgSty{deep rnn}
+  \ArgSty{OR}  \ArgSty{deep fuzzy}\;
+\end{algorithm}
+
+\begin{algorithm}
+  \label{algo:driverbehavior}
+  \renewcommand{\algorithmcfname}{String de busca}
+  \caption{Busca por comportamento do motorista (\textit{driving
+      behavior}) e variações, considerando o
+  título, resumo e palavras-chave}
+  \SetAlgoLined
+  \DontPrintSemicolon
+  \FuncSty{TITLE-ABS-KEY:}\;
+  \Indp
+  \FuncArgSty{drive* identif*}  \ArgSty{OR}  \FuncArgSty{drive* fingerprint*}  \ArgSty{OR}  \FuncArgSty{drive* recogn*}  \ArgSty{OR}  \FuncArgSty{drive* behaviour*}  \ArgSty{OR}  \FuncArgSty{drive* behavior*}  \ArgSty{OR}  \FuncArgSty{drive* model*}  \ArgSty{OR}  \FuncArgSty{drive* perform*}  \ArgSty{OR}  \FuncArgSty{drive* modelling}  \ArgSty{OR}  \FuncArgSty{drive* modeling}  \ArgSty{OR}  \FuncArgSty{drive* feature}  \ArgSty{OR}  \FuncArgSty{drive* mapping}  \ArgSty{OR}  \FuncArgSty{drive* characteristic}  \ArgSty{OR}  \FuncArgSty{drive* characteristical}  \ArgSty{OR}  \FuncArgSty{drive* trait*}  \ArgSty{OR}  \FuncArgSty{conductor* identif*}  \ArgSty{OR}  \FuncArgSty{conductor* fingerprint*}  \ArgSty{OR}  \FuncArgSty{conductor* recogn*}  \ArgSty{OR}  \FuncArgSty{conductor* behaviour*}  \ArgSty{OR}  \FuncArgSty{conductor* behavior*}  \ArgSty{OR}  \FuncArgSty{conductor* model*}  \ArgSty{OR}  \FuncArgSty{conductor* perform*}  \ArgSty{OR}  \FuncArgSty{conductor* modelling}  \ArgSty{OR}  \FuncArgSty{conductor* modeling}  \ArgSty{OR}  \FuncArgSty{conductor* feature}  \ArgSty{OR}  \FuncArgSty{conductor* mapping}  \ArgSty{OR}  \FuncArgSty{conductor* characteristic}  \ArgSty{OR}  \FuncArgSty{conductor* characteristical}  \ArgSty{OR}  \FuncArgSty{conductor* trait*}  \ArgSty{OR}  \FuncArgSty{driving identif*}  \ArgSty{OR}  \FuncArgSty{driving fingerprint*}  \ArgSty{OR}  \FuncArgSty{driving recogn*}  \ArgSty{OR}  \FuncArgSty{driving behaviour*}  \ArgSty{OR}  \FuncArgSty{driving behavior*}  \ArgSty{OR}  \FuncArgSty{driving model*}  \ArgSty{OR}  \FuncArgSty{driving perform*}  \ArgSty{OR}  \FuncArgSty{driving modelling}  \ArgSty{OR}  \FuncArgSty{driving modeling}  \ArgSty{OR}  \FuncArgSty{driving feature}  \ArgSty{OR}  \FuncArgSty{driving mapping}  \ArgSty{OR}  \FuncArgSty{driving characteristic}  \ArgSty{OR}  \FuncArgSty{driving characteristical}  \ArgSty{OR}  \FuncArgSty{driving trait*}  \ArgSty{OR}  \FuncArgSty{driving abilit*}  \ArgSty{OR}  \FuncArgSty{driver* abilit*}  \ArgSty{OR}  \FuncArgSty{conductor* abilit*}\;
+\end{algorithm}
+
 
 \subsection{Questões de pesquisa}
 Para nortear a extração de informações relevantes aos objetivos, foram
