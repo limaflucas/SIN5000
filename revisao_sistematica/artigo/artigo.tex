@@ -67,7 +67,8 @@
 \usepackage[inline]{enumitem}
 % Fancy way to display text
 \usepackage[ruled, vlined]{algorithm2e}
-
+% Page change
+\usepackage[strict]{changepage}
 % Some very useful LaTeX packages include:
 % (uncomment the ones you want to load)
 
@@ -472,8 +473,7 @@
 \renewcommand{\abstractname}{Resumo}
 \IEEEtitleabstractindextext{%
   \begin{abstract}
-    Técnicas de aprendizagem profunda têm atraído bastante atenção por
-    sua capacidade de analisar dados de grandes dimensionalidades e baixa correlação extrair informações relevantes, ao contexto que são aplicados.
+FALTANTE
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -552,20 +552,18 @@ Motorista, Análise Comportamental, Deep Learning, Aprendizagem Profunda
 % aprendizagem profunda, aplicados na análise
 % comportamental de motoristas.\par
 
-\IEEEPARstart{A}{análise} comportamental, dentro  da inteligência artificial, é um
-campo bem difundido e pesquisado explorando as diversas aplicações com
-o uso de variadas técnicas de aprendizado,
+\IEEEPARstart{A}{análise} comportamental, dentro do campo da inteligência artificial, é uma
+atividade bem difundida e pesquisada, explorando o uso de diversas técnicas de aprendizado,
 como o aprendizado superficial, \textit{shallow learning}, a lógica
 difusa e o aprendizado profundo, mais conhecido como \textit{deep
   learning}. \textit{Deep learning} é um método que aplica
-técnicas de aprendizado superficial não lineares e encadeadas com
-múltiplos níveis, com a finalidade de aprender tarefas complexas a partir de dados não
+técnicas de aprendizado superficial não lineares encadeadas em múltiplos níveis, com a finalidade de aprender tarefas complexas a partir de dados não
 tratados, LeCun \emph{et~al.}\cite{Lecun2015436}.
 
 O comportamento de condução pode ser definido como uma sequência de
-ações realizadas uma a uma quando há interação entre o motorista e o
+ações segmentáveis e realizadas uma a uma quando há interação entre o motorista e o
 veículo \cite{Liu2016}. Nesta revisão
-utilizamos a mesma definição, mas com uma especifidade ainda maior,
+utilizamos a definição acima, mas com uma especifidade ainda maior,
 além de ser uma sequência de ações, executadas uma a uma, elas devem
 ocorrer por um período de tempo limitado e ser mensuráveis através de
 sensores automotivos instalados no veículo.
@@ -716,11 +714,69 @@ Science.
 
 
 \subsection{Questões de pesquisa}
-Para nortear a extração de informações relevantes aos objetivos, foram
-estruturadas as seguintes de pesquisa:
+Kitchenham \cite{kitchenham2007}, defende que a definição das questões
+de pesquisa é o elemento mais importante de qualquer revisão
+sistemática e isto ocorre porque toda a metodologia da revisão será guiada
+por estes questionamentos.
 
+No presente estudo foram elaboradas três questões de pesquisa com o
+objetivo de identificar quais técnicas de aprendizado profundo,
+aplicadas ao contexto de análise comportamental de condutores, vem
+sendo utilizadas e quais são as suas vantagens e desvantagens frente à
+outros modelos. Também houve a preocupação em compreender como os
+atributos captados do veículo instantaneamente estavam sendo tratados,
+organizados e apresentados à rede neural. As questões de pesquisa
+(\emph{QP}) que nortearam este estudo, e suas justificativas,
+encontram-se abaixo ordenadas por relevância:
 
-\subsection{Definição das fontes de pesquisa e string de busca}
+\begin{description}
+\item [\emph{QP1: }]\emph{Quais são as arquiteturas de \textit{deep learning} aplicadas
+  na área de reconhecimento do comportamento de motoristas?}
+  \vspace{0.15cm}
+  \begin{adjustwidth}{}{}
+    As técnicas de aprendizagem profunda são aplicadas em diversas
+    áreas do conhecimento. Wang \cite{Wang20171360},  utiliza
+    \textit{deep learning} para identificar falhas em turbinas
+    eólicas; Mukherjee \cite{Mukherjee20171205} aplica a mesma técnica para realizar
+    segmentação de nódulos pulmonares. As técnicas de redes neurais profundas,
+    assim como as técnicas de redes neurais superficiais, podem ser classificadas
+    como \textit{feedforward} ou recorrentes; supervisionadas, semi-supervisionadas, não
+    supervisionadas ou de reforço.
+
+    Entender a arquitetura utilizada na rede neural, e a sua
+    classificação, é importante para identificar quais redes produzem
+    os melhores resultados considerando os dados apresentados e o
+    tipo de problema que ela foi proposta à resolver.
+  \end{adjustwidth}
+  \vspace{0.3cm}
+\item [\emph{QP2: }]\emph{Como devem ser tratados os casos de \textit{outliers} e
+  medições que apresentam interferências ou dados corrompidos?}
+  \vspace{0.15cm}
+  \begin{adjustwidth}{}{}
+    Na atualidade, a captação de dados sensoriados pode ser
+    considerada uma tarefa trivial, por isso os sensores estão presentes nos mais
+    variados objetos do cotidiano. Mesmo se tratando de uma atividade
+    simples, existe a possibilidade de falha na leitura, produção de dados
+    ruidosos ou corrompimento das informações. Liu \cite{Liu2016}
+    alerta que estes dados defeituosos interferem na
+    capacidade de segmentação do comportamento do motorista.
+    
+    Esta pergunta auxiliou a identificar e entender quais são as estratégias mais
+    utilizadas e adequadas na minimização do impacto causado por dados defeituosos e \textit{outliers}.
+  \end{adjustwidth}
+    \vspace{0.3cm}
+\item [\emph{QP3: }]\emph{Quais campos sensoriados devem ser
+    apresentados à rede neurais de aprendizado profundo?}
+    \vspace{0.15cm}
+    \begin{adjustwidth}{}{}
+      O objetivo desta pergunta é entender se a ordem de apresentação
+      dos dados coletados pelos diferentes sensores acoplados ao
+      veículo altera o desenho da rede \textit{deep learning} durante
+      a execução atividade de segmentação de características do motorista.
+    \end{adjustwidth}
+\end{description}
+
+\subsection{Definição das fontes de pesquisa e filtros de resultado}
 
 \subsection{Critérios de inclusão e exclusão}
 \label{sec:protocolo:inclusao}

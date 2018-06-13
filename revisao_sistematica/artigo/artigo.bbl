@@ -44,4 +44,13 @@ H.~Liu, T.~Taniguchi, K.~Takenaka, and T.~Bando, ``Defect-repairable latent
   \url{https://www.scopus.com/inward/record.uri?eid=2-s2.0-85042305285&doi=10.3390%2fs18020608&partnerID=40&md5=9c3938225b4d8302ab95d4846006abd4}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Wang20171360}
+L.~Wang, Z.~Zhang, H.~Long, J.~Xu, and R.~Liu, ``Wind turbine gearbox failure
+  identification with deep neural networks,'' \emph{IEEE Transactions on
+  Industrial Informatics}, vol.~13, no.~3, pp. 1360--1368, 2017.
+
+\bibitem{Mukherjee20171205}
+S.~Mukherjee, X.~Huang, and R.~Bhagalia, ``Lung nodule segmentation using deep
+  learned prior based graph cut,'' 2017, pp. 1205--1208.
+
 \end{thebibliography}

@@ -28,6 +28,8 @@
     "Sommer2008362"
     "Liang20071"
     "Lecun2015436"
-    "kitchenham2007"))
+    "kitchenham2007"
+    "Wang20171360"
+    "Mukherjee20171205"))
  :bibtex)
 
