@@ -553,7 +553,7 @@ Motorista, Análise Comportamental, Deep Learning, Aprendizagem Profunda
 % comportamental de motoristas.\par
 
 \IEEEPARstart{A}{análise} comportamental, dentro do campo da inteligência artificial, é uma
-atividade bem difundida e pesquisada, explorando o uso de diversas técnicas de aprendizado,
+atividade bastante difundida e pesquisada, explorando o uso de diversas técnicas de aprendizado,
 como o aprendizado superficial, \textit{shallow learning}, a lógica
 difusa e o aprendizado profundo, mais conhecido como \textit{deep
   learning}. \textit{Deep learning} é um método que aplica
@@ -565,7 +565,7 @@ ações segmentáveis e realizadas uma a uma quando há interação entre o moto
 veículo \cite{Liu2016}. Nesta revisão
 utilizamos a definição acima, mas com uma especifidade ainda maior,
 além de ser uma sequência de ações, executadas uma a uma, elas devem
-ocorrer por um período de tempo limitado e ser mensuráveis através de
+ocorrer por um período de tempo limitado e ser mensuráveis por meio de
 sensores automotivos instalados no veículo.
 
 As sessões seguintes estruturam esta pesquisa conforme a ordem: na seção
@@ -615,7 +615,7 @@ motoristas, resultou na seção \ref{sec:discussao}.
 \subsection{Objetivos da revisão sistemática de literatura}
 \label{sec:protocolo:objetivos}
 A revisão sistemática da literatura tem como objetivo coletar,
-organizar e entender o estado da arte de projetos de pesquisa que
+organizar e compreender o estado da arte de projetos de pesquisa que
 explorem exclusivamente a aplicação de métodos de aprendizagem
 profunda na análise idiossincrática de condutores veiculares. Além
 destas características, o estudo limita-se a incluir pesquisas cujo os
@@ -653,9 +653,9 @@ as métricas utilizadas para avaliar a inclusão de novos
 termos.
 
 A \textit{query} de busca pelas técnicas de aprendizagem profunda
-contem 30 termos. Sem a aplicação de nenhum filtro nos resultados, 43.272 artigos foram
+contém 30 termos. Sem a aplicação de nenhum filtro nos resultados, 43.272 artigos foram
 retornados pelo Scopus e 24.928 pela Web of Science, uma diferença de
-42,39\%. Já a busca pelo comportamento do motorista possui 45
+57,60\%. Já a busca pelo comportamento do motorista possui 45
 termos ao todo e, também sem a aplicação de filtros, a busca nas
 mesmas bases retornaram 36.968 e 21.548 artigos, respectivamente. Ambas as \textit{queries} podem ser
 consultadas nas tabelas \ref{algo:deeplearning} e
@@ -713,8 +713,8 @@ Science.
 \end{algorithm}
 
 
-\subsection{Questões de pesquisas}
-Kitchenham \cite{kitchenham2007}, defende que a definição das questões
+\subsection{Questões de pesquisa}
+Kitchenham \cite{kitchenham2007} defende que a definição das questões
 de pesquisa é o elemento mais importante de qualquer revisão
 sistemática e isto ocorre porque toda a metodologia da revisão será guiada
 por estes questionamentos.
@@ -766,17 +766,256 @@ encontram-se abaixo ordenadas por relevância:
   \end{adjustwidth}
     \vspace{0.3cm}
 \item [\emph{QP3: }]\emph{Quais campos sensoriados devem ser
-    apresentados à rede neurais de aprendizado profundo?}
+    apresentados às redes neurais de aprendizado profundo?}
     \vspace{0.15cm}
     \begin{adjustwidth}{}{}
       O objetivo desta pergunta é entender se a ordem de apresentação
       dos dados coletados pelos diferentes sensores acoplados ao
-      veículo altera o desenho da rede \textit{deep learning} durante
-      a execução atividade de segmentação de características do motorista.
+      veículo, altera o desempenho da rede \textit{deep learning} durante
+      a execução da atividade de segmentação de características do motorista.
     \end{adjustwidth}
 \end{description}
 
 \subsection{Definição das fontes de pesquisa e filtros de resultado}
+A escolha das fontes de pesquisa ocorreu durante a primeira macro
+etapa deste projeto, a etapa de levantamento bibliográfico. A escolha
+das fontes de pesquisa não pode ser banalizada ou tratada com menor
+importância, pois elas serão responsáveis por entregar o corpo de
+textos a serem trabalhados nas demais etapas da revisão sistemática de
+literatura.
+
+Na composição deste trabalho foram escolhidas duas bases de dados, a Scopus e a Web of
+Science. Outras fontes foram descartadas devido ao número de estudos
+retornados ser inferior, quando comparado às fontes de pesquisa previamente citadas, e por apresentarem artigos que já haviam
+sido mapeados.
+
+Após a execução da \textit{string} de busca nas duas fontes de
+pesquisa selecionadas, foi necessário refinar os resultados aplicando-lhes
+filtros restritivos. Primeiramente a área do conhecimento foi
+restringida à Ciência da Computação, Engenharia, Matemática e Ciências
+da Decisão; o
+segundo passo foi desconsiderar estudos que não estivessem na língua
+inglesa; finalmente, foram desprezados artigos que não eram
+classificados como artigos de conferência, artigos e artigos na
+imprensa. Não foi preciso restringir a procura à um período específico
+de tempo porque, para este estudo, era importante entender a evolução
+do uso das técnicas de aprendizado profundo.
+
+Os parâmetros de busca tanto do Scopus quanto da Web of
+Science estão disponíveis integralmente em \ref{algo:buscascopus} e
+\ref{algo:buscawos}, respectivamente.
+
+\begin{algorithm*}
+  \label{algo:buscascopus}
+  \renewcommand{\algorithmcfname}{String de busca}
+  \caption{\textit{String} de busca específica utilizada na plataforma Scopus
+    para pesquisar por \textit{deep learning} e comportamento do motorista (\textit{driving
+      behavior}), considerando variações linguísticas. A pesquisa é
+    realizada considerando o título, o resumo e as palavras-chave}
+  \SetAlgoLined
+  \DontPrintSemicolon
+  (\;
+  \Indp
+  \FuncSty{TITLE-ABS-KEY} (\FuncArgSty{deep learning} \ArgSty{OR} \FuncArgSty{convolutional
+  neural network} \ArgSty{OR} \FuncArgSty{convolution * network}
+\ArgSty{OR} \FuncArgSty{deep neural network} \ArgSty{OR}
+\FuncArgSty{auto encoder} \ArgSty{OR} \FuncArgSty{deep belief network}
+\ArgSty{OR} \FuncArgSty{convolutional network} \ArgSty{OR}
+\FuncArgSty{cnn} \ArgSty{OR} \FuncArgSty{dbn} \ArgSty{OR}
+\FuncArgSty{deep architecture} \ArgSty{OR} \FuncArgSty{autoencoder}
+\ArgSty{OR} \FuncArgSty{deep bayesian network} \ArgSty{OR}
+\FuncArgSty{deep * network} \ArgSty{OR} \FuncArgSty{deep convolution
+  network} \ArgSty{OR} \FuncArgSty{deep convolutional network}
+\ArgSty{OR} \FuncArgSty{deep neural convolutional network} \ArgSty{OR}
+\FuncArgSty{deep neural convolution network} \ArgSty{OR}
+\FuncArgSty{deep autoencoder} \ArgSty{OR} \FuncArgSty{deep auto
+  encoder} \ArgSty{OR} \FuncArgSty{deep * autoencoder} \ArgSty{OR}
+\FuncArgSty{deep * auto encoder} \ArgSty{OR} \FuncArgSty{dnn}
+\ArgSty{OR} \FuncArgSty{deep multilayer neural network} \ArgSty{OR}
+\FuncArgSty{deep artificial neural network} \ArgSty{OR}
+\FuncArgSty{deep boltzmann machine} \ArgSty{OR} \FuncArgSty{deep
+  multitask learning} \ArgSty{OR} \FuncArgSty{deep extreme learning
+  machine} \ArgSty{OR} \FuncArgSty{deep recurrent neural network}
+\ArgSty{OR} \FuncArgSty{deep rnn} \ArgSty{OR} \FuncArgSty{deep fuzzy}
+) \;
+\ArgSty{AND}\;
+\FuncSty{TITLE-ABS-KEY} (\FuncArgSty{drive* identif*} \ArgSty{OR} \FuncArgSty{drive*
+  fingerprint*} \ArgSty{OR} \FuncArgSty{drive* recogn*} \ArgSty{OR}
+\FuncArgSty{drive* behaviour*} \ArgSty{OR} \FuncArgSty{drive*
+  behavior*} \ArgSty{OR} \FuncArgSty{drive* model*} \ArgSty{OR}
+\FuncArgSty{drive* perform*} \ArgSty{OR} \FuncArgSty{drive* modelling}
+\ArgSty{OR} \FuncArgSty{drive* modeling} \ArgSty{OR}
+\FuncArgSty{drive* feature} \ArgSty{OR} \FuncArgSty{drive* mapping}
+\ArgSty{OR}  \FuncArgSty{drive* characteristic} \ArgSty{OR}
+\FuncArgSty{drive* characteristical} \ArgSty{OR} \FuncArgSty{drive*
+  trait*} \ArgSty{OR} \FuncArgSty{conductor* identif*} \ArgSty{OR}
+\FuncArgSty{conductor* fingerprint*} \ArgSty{OR}
+\FuncArgSty{conductor* recogn*} \ArgSty{OR} \FuncArgSty{conductor*
+  behaviour*} \ArgSty{OR} \FuncArgSty{conductor* behavior*}
+\ArgSty{OR} \FuncArgSty{conductor* model*} \ArgSty{OR}
+\FuncArgSty{conductor* perform*} \ArgSty{OR} \FuncArgSty{conductor*
+  modelling} \ArgSty{OR} \FuncArgSty{conductor* modeling} \ArgSty{OR}
+\FuncArgSty{conductor* feature} \ArgSty{OR} \FuncArgSty{conductor*
+  mapping} \ArgSty{OR} \FuncArgSty{conductor* characteristic}
+\ArgSty{OR} \FuncArgSty{conductor* characteristical} \ArgSty{OR}
+\FuncArgSty{conductor* trait*} \ArgSty{OR} \FuncArgSty{driving
+  identif*} \ArgSty{OR} \FuncArgSty{driving fingerprint*} \ArgSty{OR}
+\FuncArgSty{driving recogn*} \ArgSty{OR} \FuncArgSty{driving
+  behaviour*} \ArgSty{OR} \FuncArgSty{driving behavior*} \ArgSty{OR}
+\FuncArgSty{driving model*} \ArgSty{OR} \FuncArgSty{driving perform*}
+\ArgSty{OR} \FuncArgSty{driving modelling} \ArgSty{OR}
+\FuncArgSty{driving modeling} \ArgSty{OR} \FuncArgSty{driving feature}
+\ArgSty{OR} \FuncArgSty{driving mapping} \ArgSty{OR}
+\FuncArgSty{driving characteristic} \ArgSty{OR} \FuncArgSty{driving
+  characteristical} \ArgSty{OR} \FuncArgSty{driving trait*}
+\ArgSty{OR} \FuncArgSty{driving abilit*} \ArgSty{OR}
+\FuncArgSty{driver* abilit*} \ArgSty{OR} \FuncArgSty{conductor*
+  abilit*} )\;
+\Indm
+)\;
+\ArgSty{AND}  (\;
+\Indp
+\FuncArgSty{LIMIT-TO ( SUBJAREA ,  "COMP" )} \ArgSty{OR}
+\FuncArgSty{LIMIT-TO ( SUBJAREA ,  "ENGI" )} \ArgSty{OR}
+\FuncArgSty{LIMIT-TO ( SUBJAREA ,  "MATH" )} \ArgSty{OR}
+\FuncArgSty{LIMIT-TO ( SUBJAREA ,  "DECI" )} ) \ArgSty{AND} (
+\FuncArgSty{EXCLUDE ( DOCTYPE ,  "re" )} ) \ArgSty{AND} (
+\FuncArgSty{EXCLUDE ( DOCTYPE ,  "ch" )} ) \ArgSty{AND} (
+\FuncArgSty{EXCLUDE ( DOCTYPE ,  "cr" )} )\;
+\Indm)
+\end{algorithm*}
+
+\begin{algorithm*}
+  \label{algo:buscawos}
+  \renewcommand{\algorithmcfname}{String de busca}
+  \caption{\textit{String} de busca específica utilizada na plataforma Web of Science
+    para pesquisar por \textit{deep learning} e comportamento do motorista (\textit{driving
+      behavior}), considerando variações linguísticas. A pesquisa é
+    realizada considerando o tópico e título}
+  \SetAlgoLined
+  \DontPrintSemicolon
+  (\;
+  \Indp
+  \FuncSty{TS=}(\FuncArgSty{deep learning} \ArgSty{OR} \FuncArgSty{convolutional
+  neural network} \ArgSty{OR} \FuncArgSty{convolution * network}
+\ArgSty{OR} \FuncArgSty{deep neural network} \ArgSty{OR}
+\FuncArgSty{auto encoder} \ArgSty{OR} \FuncArgSty{deep belief network}
+\ArgSty{OR} \FuncArgSty{convolutional network} \ArgSty{OR}
+\FuncArgSty{cnn} \ArgSty{OR} \FuncArgSty{dbn} \ArgSty{OR}
+\FuncArgSty{deep architecture} \ArgSty{OR} \FuncArgSty{autoencoder}
+\ArgSty{OR} \FuncArgSty{deep bayesian network} \ArgSty{OR}
+\FuncArgSty{deep * network} \ArgSty{OR} \FuncArgSty{deep convolution
+  network} \ArgSty{OR} \FuncArgSty{deep convolutional network}
+\ArgSty{OR} \FuncArgSty{deep neural convolutional network} \ArgSty{OR}
+\FuncArgSty{deep neural convolution network} \ArgSty{OR}
+\FuncArgSty{deep autoencoder} \ArgSty{OR} \FuncArgSty{deep auto
+  encoder} \ArgSty{OR} \FuncArgSty{deep * autoencoder} \ArgSty{OR}
+\FuncArgSty{deep * auto encoder} \ArgSty{OR} \FuncArgSty{dnn}
+\ArgSty{OR} \FuncArgSty{deep multilayer neural network} \ArgSty{OR}
+\FuncArgSty{deep artificial neural network} \ArgSty{OR}
+\FuncArgSty{deep boltzmann machine} \ArgSty{OR} \FuncArgSty{deep
+  multitask learning} \ArgSty{OR} \FuncArgSty{deep extreme learning
+  machine} \ArgSty{OR} \FuncArgSty{deep recurrent neural network}
+\ArgSty{OR} \FuncArgSty{deep rnn} \ArgSty{OR} \FuncArgSty{deep fuzzy}
+)\;
+\ArgSty{AND}\;
+\FuncSty{TS=}(\FuncArgSty{drive* identif*} \ArgSty{OR} \FuncArgSty{drive*
+  fingerprint*} \ArgSty{OR} \FuncArgSty{drive* recogn*} \ArgSty{OR}
+\FuncArgSty{drive* behaviour*} \ArgSty{OR} \FuncArgSty{drive*
+  behavior*} \ArgSty{OR} \FuncArgSty{drive* model*} \ArgSty{OR}
+\FuncArgSty{drive* perform*} \ArgSty{OR} \FuncArgSty{drive* modelling}
+\ArgSty{OR} \FuncArgSty{drive* modeling} \ArgSty{OR}
+\FuncArgSty{drive* feature} \ArgSty{OR} \FuncArgSty{drive* mapping}
+\ArgSty{OR}  \FuncArgSty{drive* characteristic} \ArgSty{OR}
+\FuncArgSty{drive* characteristical} \ArgSty{OR} \FuncArgSty{drive*
+  trait*} \ArgSty{OR} \FuncArgSty{conductor* identif*} \ArgSty{OR}
+\FuncArgSty{conductor* fingerprint*} \ArgSty{OR}
+\FuncArgSty{conductor* recogn*} \ArgSty{OR} \FuncArgSty{conductor*
+  behaviour*} \ArgSty{OR} \FuncArgSty{conductor* behavior*}
+\ArgSty{OR} \FuncArgSty{conductor* model*} \ArgSty{OR}
+\FuncArgSty{conductor* perform*} \ArgSty{OR} \FuncArgSty{conductor*
+  modelling} \ArgSty{OR} \FuncArgSty{conductor* modeling} \ArgSty{OR}
+\FuncArgSty{conductor* feature} \ArgSty{OR} \FuncArgSty{conductor*
+  mapping} \ArgSty{OR} \FuncArgSty{conductor* characteristic}
+\ArgSty{OR} \FuncArgSty{conductor* characteristical} \ArgSty{OR}
+\FuncArgSty{conductor* trait*} \ArgSty{OR} \FuncArgSty{driving
+  identif*} \ArgSty{OR} \FuncArgSty{driving fingerprint*} \ArgSty{OR}
+\FuncArgSty{driving recogn*} \ArgSty{OR} \FuncArgSty{driving
+  behaviour*} \ArgSty{OR} \FuncArgSty{driving behavior*} \ArgSty{OR}
+\FuncArgSty{driving model*} \ArgSty{OR} \FuncArgSty{driving perform*}
+\ArgSty{OR} \FuncArgSty{driving modelling} \ArgSty{OR}
+\FuncArgSty{driving modeling} \ArgSty{OR} \FuncArgSty{driving feature}
+\ArgSty{OR} \FuncArgSty{driving mapping} \ArgSty{OR}
+\FuncArgSty{driving characteristic} \ArgSty{OR} \FuncArgSty{driving
+  characteristical} \ArgSty{OR} \FuncArgSty{driving trait*}
+\ArgSty{OR} \FuncArgSty{driving abilit*} \ArgSty{OR}
+\FuncArgSty{driver* abilit*} \ArgSty{OR} \FuncArgSty{conductor*
+  abilit*} )\;
+\Indm
+)\;
+\ArgSty{OR}\;
+  (\;
+\Indp
+\FuncSty{TI=}(\Indp\FuncArgSty{deep learning} \ArgSty{OR} \FuncArgSty{convolutional
+  neural network} \ArgSty{OR} \FuncArgSty{convolution * network}
+\ArgSty{OR} \FuncArgSty{deep neural network} \ArgSty{OR}
+\FuncArgSty{auto encoder} \ArgSty{OR} \FuncArgSty{deep belief network}
+\ArgSty{OR} \FuncArgSty{convolutional network} \ArgSty{OR}
+\FuncArgSty{cnn} \ArgSty{OR} \FuncArgSty{dbn} \ArgSty{OR}
+\FuncArgSty{deep architecture} \ArgSty{OR} \FuncArgSty{autoencoder}
+\ArgSty{OR} \FuncArgSty{deep bayesian network} \ArgSty{OR}
+\FuncArgSty{deep * network} \ArgSty{OR} \FuncArgSty{deep convolution
+  network} \ArgSty{OR} \FuncArgSty{deep convolutional network}
+\ArgSty{OR} \FuncArgSty{deep neural convolutional network} \ArgSty{OR}
+\FuncArgSty{deep neural convolution network} \ArgSty{OR}
+\FuncArgSty{deep autoencoder} \ArgSty{OR} \FuncArgSty{deep auto
+  encoder} \ArgSty{OR} \FuncArgSty{deep * autoencoder} \ArgSty{OR}
+\FuncArgSty{deep * auto encoder} \ArgSty{OR} \FuncArgSty{dnn}
+\ArgSty{OR} \FuncArgSty{deep multilayer neural network} \ArgSty{OR}
+\FuncArgSty{deep artificial neural network} \ArgSty{OR}
+\FuncArgSty{deep boltzmann machine} \ArgSty{OR} \FuncArgSty{deep
+  multitask learning} \ArgSty{OR} \FuncArgSty{deep extreme learning
+  machine} \ArgSty{OR} \FuncArgSty{deep recurrent neural network}
+\ArgSty{OR} \FuncArgSty{deep rnn} \ArgSty{OR} \FuncArgSty{deep fuzzy}
+)\;
+\ArgSty{AND}\;
+\FuncSty{TI=}(\FuncArgSty{drive* identif*} \ArgSty{OR} \FuncArgSty{drive*
+  fingerprint*} \ArgSty{OR} \FuncArgSty{drive* recogn*} \ArgSty{OR}
+\FuncArgSty{drive* behaviour*} \ArgSty{OR} \FuncArgSty{drive*
+  behavior*} \ArgSty{OR} \FuncArgSty{drive* model*} \ArgSty{OR}
+\FuncArgSty{drive* perform*} \ArgSty{OR} \FuncArgSty{drive* modelling}
+\ArgSty{OR} \FuncArgSty{drive* modeling} \ArgSty{OR}
+\FuncArgSty{drive* feature} \ArgSty{OR} \FuncArgSty{drive* mapping}
+\ArgSty{OR}  \FuncArgSty{drive* characteristic} \ArgSty{OR}
+\FuncArgSty{drive* characteristical} \ArgSty{OR} \FuncArgSty{drive*
+  trait*} \ArgSty{OR} \FuncArgSty{conductor* identif*} \ArgSty{OR}
+\FuncArgSty{conductor* fingerprint*} \ArgSty{OR}
+\FuncArgSty{conductor* recogn*} \ArgSty{OR} \FuncArgSty{conductor*
+  behaviour*} \ArgSty{OR} \FuncArgSty{conductor* behavior*}
+\ArgSty{OR} \FuncArgSty{conductor* model*} \ArgSty{OR}
+\FuncArgSty{conductor* perform*} \ArgSty{OR} \FuncArgSty{conductor*
+  modelling} \ArgSty{OR} \FuncArgSty{conductor* modeling} \ArgSty{OR}
+\FuncArgSty{conductor* feature} \ArgSty{OR} \FuncArgSty{conductor*
+  mapping} \ArgSty{OR} \FuncArgSty{conductor* characteristic}
+\ArgSty{OR} \FuncArgSty{conductor* characteristical} \ArgSty{OR}
+\FuncArgSty{conductor* trait*} \ArgSty{OR} \FuncArgSty{driving
+  identif*} \ArgSty{OR} \FuncArgSty{driving fingerprint*} \ArgSty{OR}
+\FuncArgSty{driving recogn*} \ArgSty{OR} \FuncArgSty{driving
+  behaviour*} \ArgSty{OR} \FuncArgSty{driving behavior*} \ArgSty{OR}
+\FuncArgSty{driving model*} \ArgSty{OR} \FuncArgSty{driving perform*}
+\ArgSty{OR} \FuncArgSty{driving modelling} \ArgSty{OR}
+\FuncArgSty{driving modeling} \ArgSty{OR} \FuncArgSty{driving feature}
+\ArgSty{OR} \FuncArgSty{driving mapping} \ArgSty{OR}
+\FuncArgSty{driving characteristic} \ArgSty{OR} \FuncArgSty{driving
+  characteristical} \ArgSty{OR} \FuncArgSty{driving trait*}
+\ArgSty{OR} \FuncArgSty{driving abilit*} \ArgSty{OR}
+\FuncArgSty{driver* abilit*} \ArgSty{OR} \FuncArgSty{conductor*
+  abilit*} )\;
+\Indm)\;
+\;
+\FuncSty{Refined by: WEB OF SCIENCE CATEGORIES:} ( \FuncArgSty{COMPUTER SCIENCE ARTIFICIAL INTELLIGENCE} \ArgSty{OR} \FuncArgSty{ENGINEERING MULTIDISCIPLINARY} \ArgSty{OR} \FuncArgSty{COMPUTER SCIENCE CYBERNETICS} \ArgSty{OR} \FuncArgSty{COMPUTER SCIENCE INFORMATION SYSTEMS} \ArgSty{OR} \FuncArgSty{COMPUTER SCIENCE INTERDISCIPLINARY APPLICATIONS} \ArgSty{OR} \FuncArgSty{COMPUTER SCIENCE THEORY METHODS} \ArgSty{OR} \FuncArgSty{MATHEMATICS INTERDISCIPLINARY APPLICATIONS} \ArgSty{OR} \FuncArgSty{ENGINEERING ELECTRICAL ELECTRONIC} )\;
+\FuncSty{Indexes=}\FuncArgSty{SCI-EXPANDED, SSCI, A\&HCI, CPCI-S, CPCI-SSH}, \FuncSty{ESCI Timespan=}\FuncArgSty{All years}
+\end{algorithm*}
 
 \subsection{Critérios de inclusão e exclusão}
 \label{sec:protocolo:inclusao}

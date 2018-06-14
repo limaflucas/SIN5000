@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.6.7)  13 JUN 2018 04:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.6.7)  14 JUN 2018 05:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -801,9 +801,9 @@ LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9.53561> not available
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 636.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 648.
+(babel)             in language append on input line 647.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 648.
+(babel)             in language append on input line 647.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -826,17 +826,17 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 779.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 781.
+(babel)             in language append on input line 1020.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 784.
+(babel)             in language append on input line 1023.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 786.
+(babel)             in language append on input line 1025.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 789.
+(babel)             in language append on input line 1028.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 792.
+(babel)             in language append on input line 1031.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 795.
+(babel)             in language append on input line 1034.
  (./artigo.bbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 2.
@@ -854,23 +854,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--46
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1023.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1262.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1023.
+(babel)             in language append on input line 1262.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1023.
+(babel)             in language append on input line 1262.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1023.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 1262.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 1262.
+ [4]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 1262.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language append on input line 1262.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1262.
  (./artigo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1023.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1023.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1023.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1262.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1262.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1262.
  ) 
 Here is how much of TeX's memory you used:
- 8543 strings out of 492982
- 130254 string characters out of 6138580
- 243771 words of memory out of 5000000
- 11942 multiletter control sequences out of 15000+600000
+ 8563 strings out of 492982
+ 130515 string characters out of 6138580
+ 252937 words of memory out of 5000000
+ 11956 multiletter control sequences out of 15000+600000
  47218 words of font info for 98 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  34i,11n,44p,2083b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -882,10 +892,10 @@ s/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino
 /uplbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/s
 hare/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texmf-dist/fon
 ts/type1/urw/zapfding/uzdr.pfb>
-Output written on artigo.pdf (3 pages, 147733 bytes).
+Output written on artigo.pdf (5 pages, 162271 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

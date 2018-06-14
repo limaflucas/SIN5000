@@ -25,6 +25,8 @@
     "sec:protocolo:string"
     "algo:deeplearning"
     "algo:driverbehavior"
+    "algo:buscascopus"
+    "algo:buscawos"
     "sec:protocolo:inclusao"
     "sec:resultados"
     "sec:discussao"
