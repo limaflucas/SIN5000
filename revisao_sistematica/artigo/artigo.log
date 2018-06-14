@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.6.7)  14 JUN 2018 05:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.6.7)  14 JUN 2018 05:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -827,16 +827,24 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 779.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 1020.
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 102
+9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9.53561> on input line 1029.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6.6749> on input line 1029.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <4.7678> on input line 1029.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1023.
+(babel)             in language append on input line 1043.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1025.
+(babel)             in language append on input line 1045.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1028.
+(babel)             in language append on input line 1048.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1031.
+(babel)             in language append on input line 1051.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1034.
+(babel)             in language append on input line 1054.
  (./artigo.bbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 2.
@@ -854,48 +862,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--46
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1262.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1282.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1262.
+(babel)             in language append on input line 1282.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1262.
+(babel)             in language append on input line 1282.
  [3]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1262.
+(babel)             in language append on input line 1282.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1262.
+(babel)             in language append on input line 1282.
  [4]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1262.
+(babel)             in language append on input line 1282.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 1262.
+(babel)             in language append on input line 1282.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1262.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1282.
  (./artigo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1262.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1262.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1262.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1282.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1282.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1282.
  ) 
 Here is how much of TeX's memory you used:
- 8563 strings out of 492982
- 130515 string characters out of 6138580
- 252937 words of memory out of 5000000
- 11956 multiletter control sequences out of 15000+600000
+ 8584 strings out of 492982
+ 130867 string characters out of 6138580
+ 254937 words of memory out of 5000000
+ 11975 multiletter control sequences out of 15000+600000
  47218 words of font info for 98 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  34i,11n,44p,2083b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic
-/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/s
-hare/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/font
-s/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino
-/uplbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/s
-hare/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texmf-dist/fon
-ts/type1/urw/zapfding/uzdr.pfb>
-Output written on artigo.pdf (5 pages, 162271 bytes).
+ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/co
+urier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></u
+sr/share/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-dist
+/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/pal
+atino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></
+usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist
+/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/za
+pfding/uzdr.pfb>
+Output written on artigo.pdf (5 pages, 170594 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
