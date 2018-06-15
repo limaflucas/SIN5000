@@ -12,49 +12,57 @@ Database file #2: bib/scopus.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty booktitle in Kagawa2017
+Warning--empty booktitle in Streiffer201722
+Warning--empty booktitle in Karaduman20171046
+Warning--empty booktitle in Kagawa2017719
+Warning--empty booktitle in Yin20171424
+Warning--empty booktitle in Musoles2017130
 Warning--empty booktitle in Liu2016
+Warning--empty booktitle in Liu20151054
+Warning--empty booktitle in Liu20141427
 Warning--empty booktitle in Mukherjee20171205
 
 Done.
-You've used 6 entries,
+You've used 29 entries,
             4087 wiz_defined-function locations,
-            1385 strings with 18766 characters,
-and the built_in function-call counts, 4455 in all, are:
-= -- 338
-> -- 119
-< -- 34
-+ -- 66
-- -- 22
-* -- 226
-:= -- 666
-add.period$ -- 12
-call.type$ -- 6
-change.case$ -- 6
-chr.to.int$ -- 75
-cite$ -- 8
-duplicate$ -- 321
-empty$ -- 355
-format.name$ -- 28
-if$ -- 1025
+            1526 strings with 23463 characters,
+and the built_in function-call counts, 23663 in all, are:
+= -- 1850
+> -- 631
+< -- 212
++ -- 358
+- -- 111
+* -- 1137
+:= -- 3404
+add.period$ -- 58
+call.type$ -- 29
+change.case$ -- 29
+chr.to.int$ -- 477
+cite$ -- 39
+duplicate$ -- 1682
+empty$ -- 1861
+format.name$ -- 139
+if$ -- 5584
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 57
-newline$ -- 41
-num.names$ -- 6
-pop$ -- 142
+int.to.str$ -- 29
+missing$ -- 290
+newline$ -- 110
+num.names$ -- 29
+pop$ -- 701
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 340
+skip$ -- 1844
 stack$ -- 0
-substring$ -- 181
-swap$ -- 251
-text.length$ -- 9
+substring$ -- 1142
+swap$ -- 1391
+text.length$ -- 53
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 6
-warning$ -- 2
-while$ -- 15
-width$ -- 7
-write$ -- 77
-(There were 2 warnings)
+type$ -- 29
+warning$ -- 10
+while$ -- 98
+width$ -- 31
+write$ -- 297
+(There were 10 warnings)

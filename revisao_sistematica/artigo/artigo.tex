@@ -479,11 +479,20 @@
 \renewcommand{\abstractname}{Resumo}
 \IEEEtitleabstractindextext{%
   \begin{abstract}
-FALTANTE
-\end{abstract}
+    As técnicas de \textit{deep learning} e a sua capacidade de
+    aprender tarefas complexas a partir de conjuntos de dados
+    complexos e com grande dimensão, têm atraído cada vez mais atenção
+    e adeptos. A análise comportamental, por ser uma tarefa que exige
+    a identificação de correlações entre os aspectos analisados,
+    torna-se uma candidata natural para a aplicação desta
+    técnica. Neste artigo é feita uma revisão sistemática da
+    literatura com o objetivo de identificar estudos que realizam a
+    tarefa de análise comportamental em conjunto com outras diretrizes
+    que regem a aplicação desta técnica.
+  \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
-\renewcommand{\IEEEkeywordsname}{Palavras-chave}
+%\renewcommand{\IEEEkeywordsname}{Palavras-chave}
 \begin{IEEEkeywords}
 Motorista, Análise Comportamental, Deep Learning, Aprendizagem Profunda
 \end{IEEEkeywords}}
@@ -519,6 +528,7 @@ Motorista, Análise Comportamental, Deep Learning, Aprendizagem Profunda
 
 
 \IEEEraisesectionheading{\section{Introdução}\label{sec:introduction}}
+\nocite{*}
 % Computer Society journal (but not conference!) papers do something unusual
 % with the very first section heading (almost always called "Introduction").
 % They place it ABOVE the main text! IEEEtran.cls does not automatically do
@@ -578,9 +588,8 @@ As sessões seguintes estruturam esta pesquisa conforme a ordem: na seção
 \ref{sec:protocolo} o protocolo da pesquisa é detalhado, bem como seu
 objetivo e as questões de pesquisa; na seção \ref{sec:resultados}
 são apresentados os resultados obtidos; a discussão sobre o tema
-ocorre na seção \ref{sec:discussao}; a conclusão deste trabalho e as
-ameaças à sua validade são expostos nas seções \ref{sec:conclusao} e
-\ref{sec:validade}, respectivamente.
+ocorre na seção \ref{sec:discussao}; e a seção \ref{sec:conclusao} é
+responsável pela conclusão deste trabalho.
 
 \section{Protocolo de revisão}
 \label{sec:protocolo}
@@ -648,10 +657,10 @@ consiga expressar plenamente a necessidade da pesquisa, os resultados
 oriundos das bases de pesquisa não estarão condizentes com as necessidades do
 pesquisador. Justamente para evitar o cenário acima, a cadeia de pesquisa
 empregada neste estudo foi dividida e evoluída iterativamente com o
-auxílio das plataformas Scopus e Web of Science. As duas partes da
-\textit{string} passaram pelo mesmo processo de amadurecimento.
+auxílio das plataformas Scopus e Web of Science.
 
-Primeiro um termo genérico foi apresentado às plataformas
+As duas partes da
+\textit{string} passaram pelo mesmo processo de amadurecimento. Primeiro um termo genérico foi apresentado às plataformas
 supracitadas e, a partir das palavras-chaves retornadas, novos termos
 foram sendo incorporados à cadeia original. A quantidade total de documentos
 retornados e a quantidade de documentos por área do conhecimento foram
@@ -1075,12 +1084,32 @@ inclusão é 62,33\%, sendo que a regra relacionada ao uso de dados
 sensoriados automotivos possui a maior porcentagem, 42,61\% das
 exclusões.
 
-A análise crítica que será apresentada na seção \ref{sec:discussao} e
-representada pela etapa \emph{Análise dos estudos selecionados} contou
-com a participação de 25 artigos. Estes artigos, junto com seus
-autores e ano de publicação, estão representados na tabela \ref{tab:artigosdossie}.
+Ao todo, foram selecionados 25 artigos para análise crítica,
+disponibilizados na tabela \ref{tab:artigosdossie} junto com a
+identificação dos autores e ano de publicação. Esta tarefa tinha como
+alvo, além de responder as questões de pesquisa já enunciada, entender
+profundamente quais procedimentos precisam ser realizados para a
+segmentação do comportamento do condutor, quais dados precisam coletados do
+veículo para realizar tal segmentação, quais métodos de comparação foram
+utilizados para avaliação e detecção de falsos-positivos e assimilar quais procedimentos devem ser utilizados no
+tratamento dos dados coletados e como disponibilizá-los para a rede neural.
 
-\begin{figure}[!t]
+Ao término da tarefa acima, 15 pesquisas precisaram ser descartadas
+pois não atendiam plenamente aos critérios de inclusão, a maioria
+tratava-se de estudos rotulados como incertos. Os dois principais
+fatores que levaram a exclusão foi a utilização de dispositivos
+móveis, como celulares, GPS e outros dispositivos não embarcados, e o uso de imagens, capturadas em tempo real por câmeras
+instaladas no veículo ou usando conjunto de dados públicos, para realizar a
+atividade de análise comportamental do motorista. Os 8 artigos
+restantes \cite{Lee2017}, \cite{Liang2014146}, \cite{Kagawa2017},
+\cite{Liu2018}, \cite{Liu20151054}, \cite{Liu2016},
+\cite{Liu20172477} e \cite{Liu20141427} cumprem
+rigorosamente todos os critérios de inclusão e não se enquadram em
+nenhum dos critérios de exclusão, por isso a discussão dos resultados,
+apresentada na próxima sessão, será realizada baseando-se nos estudos
+em questão.
+
+\begin{figure}
 \centering
 \includegraphics[scale=0.25]{distribuicao_selecao}
 \caption{Aderência dos artigos únicos aos critérios de inclusão. Os
@@ -1090,13 +1119,14 @@ autores e ano de publicação, estão representados na tabela \ref{tab:artigosdo
 \label{fig:distselecao}
 \end{figure}
 
+\begin{landscape}
 \begin{table}[!t]
 \renewcommand{\arraystretch}{1.3}
 \caption{Lista dos artigos que atendem aos critérios de inclusão e
   que fizeram parte da etapa \emph{Análise dos estudos selecionados}.}
 \label{tab:artigosdossie}
 \centering
-\begin{tabular}{p{10cm}p{7cm}l}
+\begin{tabular}{p{12cm}ll}
 \multicolumn{1}{c}{\textbf{Artigo}}
   & \multicolumn{1}{c}{\textbf{Autores}}
   & \multicolumn{1}{c}{\textbf{Ano}} \\ \hline
@@ -1127,27 +1157,121 @@ Visualization of Driving Behavior Based on Hidden Feature Extraction by Using De
 Visualization of driving behavior using deep sparse autoencoder                                                                                  & Liu H., Taniguchi T., Takano T., Tanaka Y., Takenaka K., Bando T.            & 2014                            
 \end{tabular}
 \end{table}
+\end{landscape}
+
+
 
 \section{Discussão dos resultados}
 \label{sec:discussao}
 Esta sessão tem o objetivo de discorrer de forma crítica sobre os
-artigos da tabela \ref{tab:artigosdossie} e de responder as três questões
-de pesquisa enunciadas na seção \ref{sec:protocolo:questoes}.
+artigos da tabela \ref{tab:artigoslimpos} e de responder as três questões
+de pesquisa enunciadas na seção \ref{sec:protocolo:questoes}
+baseando-se nos estudos e práticas dos artigos mencionados anteriormente.
+
+A primeira questão de pesquisa está relacionada a identificação
+das arquiteturas de redes neurais profundas que foram utilizadas no
+processo de análise comportamental dos motoristas, e a partir das
+leituras realizadas foi identificado que 7 estudos utilizam
+\textit{deep auto encoder}, podendo variar em \textit{deep sparse auto
+encoder} ou
+\textit{stacked auto encoder}; o estudo restante aplicou
+\textit{dynamic bayesian network}.
+
+Os trabalhos mais completos foram
+os desenvolvidos pelo Liu, H. \cite{Liu20151054}, \cite{Liu2016},
+\cite{Liu20141427}, \cite{Liu20172477} e \cite{Liu2018} porque além de apresentarem
+as fundamentações teóricas, utilizam técnicas como PCA, e algumas de
+suas variações, para avaliar
+dissimilaridades entre as aplicações dos algoritmos em diferentes
+conjuntos de dados. As pesquisas sob sua liderança apresentam uma
+maturidade acima das encontradas nos demais artigos, também quando
+comparado ao grupo original de 25 artigos.
+
+O artigo \textit{Defect-repairable latent feature extraction of driving behavior via a deep sparse autoencoder} \cite{Liu2018} é o único que aborda sistematicamente a
+preocupação e a aplicação de informações contendo ruídos ou \textit{outliers}. O
+estudo propõe o uso de um \textit{deep sparse auto encoder} (DSAE) treinado
+com o objetivo de recuperar as características originais dos dados
+corrompidos. A medição da qualidade é feita comparando seu desempenho
+com outras implementações de DSAE, cuja diferença está na função de
+ativação ou na maneira de propagação do erro através da rede neural
+profunda, e com algumas implementações de PCA. Algo que foi
+notado é o uso das mesmas técnicas já supracitadas ao efetuar as
+comparações de qualidade.
+
+No que diz respeito as características coletadas do veículo em tempo
+real, foram apresentadas as seguintes:
+
+\begin{itemize}
+\item Taxa de abertura do acelerador
+\item Pressão do cilindro mestre do freio
+\item Ângulo de viragem
+\item Velocidade das rodas
+\item Leituras de medidor de velocidade
+\item Velocidade do motor
+\item Aceleração longitudinal
+\item Aceleração lateral
+\item Taxa de guinada
+\end{itemize}
+Nas pesquisas realizadas pela equipe do Liu, H., os
+campos são combinados aleatoriamente, gerando pelo menos 8
+\textit{datasets} diferentes para comparar o desempenho do
+DSAE em cada uma das situações. Nas demais pesquisas não há justificativas para a ordem de
+atributos utilizada no conjunto de dados.
 
 
-
-
-
-Nesta seção serão respondidas as questões de pesquisa explicadas na
-seção \cite{sec:protocolo:questoes} 
-Após a leitura dos 25 artigos que satisfaziam aos critérios de
-inclusão, 
+\begin{table*}[!t]
+\renewcommand{\arraystretch}{1.3}
+\caption{Listagem dos artigos que não infringem nenhum dos critérios
+  de inclusão e não se enquadram em nenhum dos critérios de exclusão.}
+\label{tab:artigoslimpos}
+\centering
+\begin{tabular}{p{10cm}p{5cm}l}
+\multicolumn{1}{c}{\textbf{Artigo}}                                                                           & \multicolumn{1}{c}{\textbf{Autores}}                              & \multicolumn{1}{c}{\textbf{Ano}} \\ \hline
+A framework for evaluating aggressive driving behaviors based on in-vehicle driving records                   & Lee J., Jang K.                                                   & 2017                             \\
+A hybrid Bayesian Network approach to detect driver cognitive distraction                                     & Liang Y., Lee J.D.                                                & 2014                             \\
+Analysis of driving skills based on deep learning using stacked autoencoders                                  & Kagawa T., Chandrasiri N.P.                                       & 2017                             \\
+Defect-repairable latent feature extraction of driving behavior via a deep sparse autoencoder                 & Liu H., Taniguchi T., Takenaka K., Bando T.                       & 2018                             \\
+Essential feature extraction of driving behavior using a deep learning method                                 & Liu H., Taniguchi T., Tanaka Y., Takenaka K., Bando T.            & 2015                             \\
+Reducing the negative effect of defective data on driving behavior segmentation via a deep sparse autoencoder & Liu H., Taniguchi T., Takenaka K., Tanaka Y., Bando T.            & 2016                             \\
+Visualization of Driving Behavior Based on Hidden Feature Extraction by Using Deep Learning                   & Liu H., Taniguchi T., Tanaka Y., Takenaka K., Bando T.            & 2017                             \\
+Visualization of driving behavior using deep sparse autoencoder                                               & Liu H., Taniguchi T., Takano T., Tanaka Y., Takenaka K., Bando T. & 2014                            
+\end{tabular}
+\end{table*}
 
 \section{Conclusão e oportunidades}
 \label{sec:conclusao}
-\begin{figure*}[!t]
+Conforme é possível observar na imagem \ref{fig:evolcitacoes}, o
+interesse pelos artigos utilizados nesta pesquisa têm atraído
+crescente atenção da comunidade. A popularização das técnicas de deep
+learning se deve principalmente aos avanços conquistados graças à sua
+capacidade de aprender tarefas complexas. Entretanto, conforme as atividades desta
+pesquisa avançavam foi perceptível a escassez de trabalhos que
+abordassem a análise comportamental de motoristas conforme estruturado
+na seção \ref{sec:protocolo}.
+
+Uma parcela considerável dos artigos precisou ser desconsiderada por
+utilizar celulares na captura de informações veiculares, e a
+justificativa dada pelos autores, quando presente, recaía no preço para se adquirir
+o equipamento embarcado de leitura. Também foram descartados artigos
+que  analisavam características fisiológicas dos
+motoristas como se fossem comportamentais.
+Apesar dos contra-pontos citados acima, os trabalhos que atendiam as
+necessidades impostas demonstravam com clareza e objetividade a forma
+de condução da pesquisa, as técnicas aplicadas e os resultados
+obtidos. Dentre estes artigos, aqueles produzidos pelo auto Liu,
+H. possuíam maturidade acima dos outros. A pesquisa conduzida por ele
+iniciou no ano de 2015 e vem evoluído deste então.
+
+Ao final deste estudo é claro que as \textit{strings} de busca
+precisam ser revisadas, tanto para facilitar sua leitura e
+entendimento quanto para aumentar a quantidade de pesquisas devolvidas
+pleas fontes de pesquisa. Também é possível explorar outras
+plataformas de indexação de artigos com a finalidade de aumentar a
+diversidade de artigos disponíveis para estudo.
+
+\begin{figure*}[!h]
 \centering
-\includegraphics[scale=0.8]{evolucao_citacoes}
+\includegraphics[scale=1]{evolucao_citacoes}
 \caption{Evolução das citações dos 25 artigos selecionados para
   análise crítica}
 \label{fig:evolcitacoes}
@@ -1308,7 +1432,7 @@ inclusão,
 % number - used to balance the columns on the last page
 % adjust value as needed - may need to be readjusted if
 % the document is modified later
-%\IEEEtriggeratref{8}
+\IEEEtriggeratref{8}
 % The "triggered" command can be changed if desired:
 %\IEEEtriggercmd{\enlargethispage{-5in}}
 

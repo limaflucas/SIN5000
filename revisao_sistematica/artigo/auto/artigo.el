@@ -37,6 +37,7 @@
     "fig:distselecao"
     "tab:artigosdossie"
     "sec:discussao"
+    "tab:artigoslimpos"
     "sec:conclusao"
     "fig:evolcitacoes")
    (LaTeX-add-bibliographies
