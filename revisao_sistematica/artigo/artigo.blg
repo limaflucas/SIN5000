@@ -18,37 +18,37 @@ Warning--empty booktitle in Mukherjee20171205
 Done.
 You've used 6 entries,
             4087 wiz_defined-function locations,
-            1387 strings with 18913 characters,
-and the built_in function-call counts, 4540 in all, are:
-= -- 351
+            1385 strings with 18766 characters,
+and the built_in function-call counts, 4455 in all, are:
+= -- 338
 > -- 119
 < -- 34
 + -- 66
 - -- 22
-* -- 234
-:= -- 690
+* -- 226
+:= -- 666
 add.period$ -- 12
 call.type$ -- 6
-change.case$ -- 7
+change.case$ -- 6
 chr.to.int$ -- 75
 cite$ -- 8
-duplicate$ -- 324
-empty$ -- 356
+duplicate$ -- 321
+empty$ -- 355
 format.name$ -- 28
-if$ -- 1041
+if$ -- 1025
 int.to.chr$ -- 0
 int.to.str$ -- 6
-missing$ -- 58
-newline$ -- 43
+missing$ -- 57
+newline$ -- 41
 num.names$ -- 6
-pop$ -- 141
+pop$ -- 142
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 347
+skip$ -- 340
 stack$ -- 0
-substring$ -- 183
-swap$ -- 255
+substring$ -- 181
+swap$ -- 251
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 5
@@ -56,5 +56,5 @@ type$ -- 6
 warning$ -- 2
 while$ -- 15
 width$ -- 7
-write$ -- 81
+write$ -- 77
 (There were 2 warnings)
