@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2018/Arch Linux)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: PPgSI-modeloQualificacaoOuDissertacaoLatex.aux
+The top-level auxiliary file: trabalho_final.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
@@ -22,44 +22,44 @@ Reallocated glb_str_end (elt_size=8) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 3 entries,
+You've used 4 entries,
             6714 wiz_defined-function locations,
-            1200 strings with 9447 characters,
-and the built_in function-call counts, 1420 in all, are:
-= -- 214
-> -- 1
-< -- 1
-+ -- 48
-- -- 1
-* -- 54
-:= -- 217
-add.period$ -- 0
-call.type$ -- 4
-change.case$ -- 9
-chr.to.int$ -- 5
-cite$ -- 0
-duplicate$ -- 12
-empty$ -- 143
-format.name$ -- 0
-if$ -- 366
+            1210 strings with 9673 characters,
+and the built_in function-call counts, 4974 in all, are:
+= -- 712
+> -- 17
+< -- 151
++ -- 199
+- -- 6
+* -- 253
+:= -- 614
+add.period$ -- 5
+call.type$ -- 5
+change.case$ -- 17
+chr.to.int$ -- 9
+cite$ -- 1
+duplicate$ -- 495
+empty$ -- 205
+format.name$ -- 23
+if$ -- 991
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 31
-newline$ -- 8
-num.names$ -- 0
-pop$ -- 36
+missing$ -- 49
+newline$ -- 15
+num.names$ -- 5
+pop$ -- 55
 preamble$ -- 1
-purify$ -- 9
+purify$ -- 12
 quote$ -- 0
-skip$ -- 186
+skip$ -- 661
 stack$ -- 1
-substring$ -- 59
-swap$ -- 1
-text.length$ -- 0
+substring$ -- 254
+swap$ -- 173
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 2
+while$ -- 11
 width$ -- 0
-write$ -- 8
+write$ -- 27

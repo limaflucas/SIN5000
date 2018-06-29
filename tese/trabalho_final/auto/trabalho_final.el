@@ -1,5 +1,5 @@
 (TeX-add-style-hook
- "PPgSI-modeloQualificacaoOuDissertacaoLatex"
+ "trabalho_final"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("abntex2ppgsi" "		12pt" "						oneside" "				a4paper" "										english" "						brazil					")))
@@ -20,6 +20,7 @@
     "mdwlist"
     "algpseudocode"
     "lipsum"
+    "siunitx"
     "backref"
     "abntex2cite")
    (LaTeX-add-bibliographies
