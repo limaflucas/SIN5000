@@ -281,6 +281,9 @@ Dissertação apresentada à Escola de Artes, Ciências e Humanidades da Univers
   \widowpenalty10000
   \displaywidowpenalty10000
 
+
+\gdef\clearforchapter{}
+
 % ----
 % Início do documento
 % ----
@@ -705,43 +708,58 @@ Dissertação apresentada à Escola de Artes, Ciências e Humanidades da Univers
 \chapter{Tema}
 Os automóveis representam um importante papel na sociedade atual não
 sendo aproveitados somente para locomoção civil, mas também como meio
-de serviço. O Departamento Nacional de Trânsito \cite{DENATRANfrotaabr2018}, órgão governamental responsável pelo levantamento da frota de
-veículos do território nacional, estima em sua última pesquisa, realizada
-em abril de 2018, que o Brasil possuía \num{98201128} veículos
-registrados, sendo que a região sudeste detém 48,63\% destes
-cadastros, ou seja, a região possui 1,8 carros por
-habitante\footnote{Segundo a estimativa do Instituto Brasileiro de
+de serviço. O Departamento Nacional de Trânsito (DENATRAN), órgão
+governamental responsável pelo levantamento da frota de veículos do
+território nacional, estima em sua última pesquisa, realizada em abril
+de 2018, que o Brasil possuía \num{98201128} veículos registrados \cite{DENATRANfrotaabr2018},
+sendo que a região sudeste detém 48,63\% destes cadastros, o
+equivalente a 1,8 carros por habitante\footnote{Utilizando a
+  estimativa de \num{86949714} habitantes do Instituto Brasileiro de
   Geografia e Estatística \cite{IBGEjulho2018}}.
 
-
-%(incluir sub nota para o levantamento do IBGE de Julho de 2017 onde a
-%região sudeste possui \num{86949714} habitantes).
-
-
-Segundo \cite{Fuller2005461}, o comportamento de um motorista pode ser
-modelado utilizando a capacidade do motorista e a tarefa de direção em
-si. A capacidade do motorista caracteriza a parcela biológica do
+Ray Fuller propõe que o comportamento de um motorista pode ser
+modelado considerando as capacidades do condutor e a
+execução da tarefa de direção \cite{Fuller2005461}. A capacidade do condutor caracteriza a parcela biológica do
 modelo, sendo responsável pela velocidade de processamento, tempo de
-reação e seus limites físicos. Já a tarefa de direção corresponde à parcela
+reação e seus limites físicos. Já a execução da tarefa de direção corresponde à parcela
 sistemática que está sujeita a interferências externas,
-como visibilidade e características da via.
+como características ambientais e peculiaridades da via.
 
 Sensores automobilísticos controlam e monitoram a utilização do veículo
 Cada motorista é um ator distinto, pois interage de forma única com os sensores
-A bioassinatura é obtida através da condensação, normalização, análise e extração de características dos dados sensoriados
-\section{Motivação}
+A bioassinatura é obtida através da condensação, normalização, análise
+e extração de características dos dados sensoriados
+
+\vspace{1cm}
+\chapter{Motivação}
 A bioassinatura, por ser única para cada motorista, pode ser aplicada na prevenção à fraudes e roubos
 Por utilizar dados veiculares sensoriados, é um método não intrusivo que pode ser utilizado isoladamente ou em conjunto com outras soluções de identificação
-\section{Lacuna}
+
+\vspace{1cm}
+\chapter{Lacuna}
 Atualmente, a análise do perfil de condução de um motorista preocupa-se em inferir o seu estado fisiológico
-Existem poucos estudos que utilizam os mesmos dados sensoriados para inferir a identidade do motorista, de forma não intrusiva, e classificá-lo dentro de um grupo
+Existem poucos estudos que utilizam os mesmos dados sensoriados para
+inferir a identidade do motorista, de forma não intrusiva, e
+classificá-lo dentro de um grupo
+
+\vspace{1cm}
 \chapter{Objetivo}
-Confeccionar um modelo para inferência da identidade do condutor veicular utilizando a sua bioassinatura de condução em conjunto com os dados sensoriados instantâneos do veículo.
-\section{Hipótese}
+Confeccionar um modelo para inferência da identidade do condutor
+veicular utilizando a sua bioassinatura de condução em conjunto com os
+dados sensoriados instantâneos do veículo.
+
+\vspace{1cm}
+\chapter{Hipótese}
 Com o uso de técnicas de aprendizagem profunda é possível obter um resultado mais apurado ao realizar a  extração de características, quando utilizada em séries temporais de alta dimensionalidade, e também apresentar menores índices de erro ao realizar classificações em sistemas com muitos grupos.
 A expectativa, ao aplicar tais técnicas, recai sobre menores índices de falso-positivos e falso-negativos ao aplicar-se f-score sobre os resultados gerados. Também é esperado que o custo computacional para sua operação não inviabilize a utilização pelo mercado.
-\section{Justificativa}
-Caso a aplicação da técnica de aprendizagem profunda apresente os resultados esperados, será possível explorar novas maneiras para criar-se perfis comportamentais não intrusivos
+
+\vspace{1cm}
+\chapter{Justificativa}
+Caso a aplicação da técnica de aprendizagem profunda apresente os
+resultados esperados, será possível explorar novas maneiras para
+criar-se perfis comportamentais não intrusivos
+
+\vspace{1cm}
 \chapter{Metodologia}
 Pesquisa quantitativa
 Utilização de dados reais captados por sensores
@@ -750,8 +768,10 @@ Utilização de dados reais captados por sensores
 Utilização de métodos de aprendizagem profunda
   Geração das bioassinaturas
   Inferência da identidade em tempo real
-Análise estatística para avaliação dos resultados obtidos
-\section{Avaliação}
+  Análise estatística para avaliação dos resultados obtidos
+
+\vspace{1cm}  
+\chapter{Avaliação}
 Geração das bioassinaturas
   Comparação do tempo de execução e custo computacional
   Complexidade de aplicação do método de geração
@@ -760,7 +780,9 @@ Inferência do condutor
   Tempo médio para convergência e custo computacional
 
 Escolha do “melhor modelo”
-  Razão ponderada entre os resultados obtidos
+Razão ponderada entre os resultados obtidos
+
+\vspace{1cm}
 \chapter{Contribuições e Limitações}
 \section{Contribuições}
 Modelo para geração e validação de bioassinaturas veiculares
@@ -769,6 +791,8 @@ Alternativa aos métodos de identificação intrusivos
 Restrição a um tipo de veículo
 Limitação a motoristas experientes
 Não há classificação das rotas
+
+\pagebreak
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
