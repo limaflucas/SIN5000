@@ -1,4 +1,4 @@
-%% abtex2-modelo-trabalho-academico.tex, v-1.9.2 laurocesar
+\message{ !name(trabalho_final.tex)}%% abtex2-modelo-trabalho-academico.tex, v-1.9.2 laurocesar
 %% Copyright 2012-2014 by abnTeX2 group at http://abntex2.googlecode.com/ 
 %%
 %% This work may be distributed and/or modified under the
@@ -140,8 +140,7 @@
 % Ele deve ser idêntico ao da versão original.
 %
 %-------------------------------------------------------------------------
-\titulo{Geração de bioassinaturas de condução com o uso de técnicas de
-  \textit{deep learning}}
+\titulo{Título do trabalho: subtítulo do trabalho}
 
 %-------------------------------------------------------------------------
 % Comentário adicional do PPgSI - Informações sobre o ``autor'':
@@ -289,6 +288,9 @@ Dissertação apresentada à Escola de Artes, Ciências e Humanidades da Univers
 % Início do documento
 % ----
 \begin{document}
+
+\message{ !name(trabalho_final.tex) !offset(-3) }
+
 
 % Retira espaço extra obsoleto entre as frases.
 \frenchspacing
@@ -796,110 +798,47 @@ sua utilização pelo mercado.
 \chapter{Justificativa}
 Caso a aplicação da técnica de aprendizagem profunda apresente os
 resultados esperados, será possível explorar novas maneiras para
-criar-se perfis comportamentais de direção com menores custos
-computacionais.
+criar-se perfis comportamentais não intrusivos
 
 \vspace{1.2cm}
 \chapter{Metodologia}
-Esta seção descreve detalhadamente as atividades necessárias para se alcançar o
-objetivo proposto anteriormente. A figura \ref{fig:cronograma}
-organiza e ordena a execução destas atividades durante o período de um
-ano, que é o prazo esperado para a realização da pesquisa.
+Pesquisa quantitativa
+Utilização de dados reais captados por sensores
+  Geração das bioassinaturas, testes e validação das mesmas
+  Inferência do motorista
+Utilização de métodos de aprendizagem profunda
+  Geração das bioassinaturas
+  Inferência da identidade em tempo real
+  Análise estatística para avaliação dos resultados obtidos\par
 
-A metodologia de pesquisa que caracteriza este estudo é a
-quantitativa, pois os resultados obtidos por meio do modelo biométrico para
-identificação do condutor serão comparados
-com outros estudos disponíveis na comunidade como o
-\cite{Liu2018}. Além disso, esta pesquisa também possui caráter
-experimental porque há o desenvolvimento do modelo responsável pela
-identificação biométrica.
-
-\begin{figure}[H]
-  \centering
-  \caption{Cronograma de execução das atividades.}
-  \includegraphics[width=\textwidth]{static/cronograma}
-  \label{fig:cronograma}
-  \source{Lucas Freire Lima, 2018}
-\end{figure}
-
-Primeiramente é preciso entender qual é o estado da arte e quais
-trabalhos são relevantes quando abordamos o tema de identificação
-biométrica e identificação de condutores utilizando dados sensoriados
-do veículo, por isso as atividades de estudos bibliográficos
-exploratórios e a revisão sistemática da literatura serão executadas
-nos primeiros 4 meses. Sabendo de antemão como o problema está sendo abordado, é preciso
-selecionar, tratar e documentar a/as bases de dados que serão utilizadas tanto para a
-validação do modelo proposto quanto para a reprodução desta pesquisa pela
-comunidade científica. Esta necessidade impõe uma restrição sobre os
-dados, pois eles precisam estar disponíveis publicamente aos interessados.
-
-A quinta atividade do cronograma consiste em desenvolver o modelo
-responsável por identificar o condutor de acordo com os
-dados sensoriados do veículo. Este modelo será desenvolvido
-aplicando-se técnicas de aprendizagem profunda devido a sua capacidade
-de extrair características de séries temporais multidimensionais. A
-sexta atividade definirá o protocolo de qualidade para avaliação dos
-resultados provenientes da aplicação do modelo descrito
-anteriormente; esta atividade é detalhada separadamente no capitulo
-\ref{chap:avaliacao}.
-
-O segundo semestre desta proposta de pesquisa será dedicado à execução
-dos experimentos utilizando as bases de dados selecionadas com a
-apresentação de diferentes combinações do conjunto de dados, que foram
-organizados na quarta atividade; a previsão de duração para este item
-são de três meses. No último trimestre do ano serão executadas as
-avaliações dos experimentos que definirá a comprovação ou refutação
-desta proposta de projeto de pesquisa.
-
-% Pesquisa quantitativa
-% Utilização de dados reais captados por sensores
-%   Geração das bioassinaturas, testes e validação das mesmas
-%   Inferência do motorista
-% Utilização de métodos de aprendizagem profunda
-%   Geração das bioassinaturas
-%   Inferência da identidade em tempo real
-%   Análise estatística para avaliação dos resultados obtidos\par
+  \begin{figure}[H]
+    \centering
+    \caption{Cronograma de execução das atividades.}
+    \includegraphics[scale=1.46]{static/cronograma}
+    \source{Lucas Freire Lima, 2018}
+  \end{figure}
 
 \vspace{1.2cm}  
 \chapter{Avaliação}
-\label{chap:avaliacao}
-A avaliação dos experimentos será realizada considerando
-duas etapas. A primeira diz respeito a geração das bioassinaturas de
-condução, que é a representação matemática do perfil de condução
-motorista, e a segunda se dedica a identificação do condutor por meio da sua
-assinatura biométrica.
+Geração das bioassinaturas
+  Comparação do tempo de execução e custo computacional
+  Complexidade de aplicação do método de geração
+Inferência do condutor
+  f-score
+  Tempo médio para convergência e custo computacional
 
-Na etapa de confecção da bioassinatura serão considerados o tempo de
-execução e o custo computacional para se obter o modelo
-matemático. Para a identificação do motorista serão utilizados o
-\textit{f-score}, curvas \textit{ROC}, o tempo médio para se identificar o motorista e seu
-custo computacional.
-
-O melhor modelo será aquele que apresentar o maior resultado
-considerando a execução das duas atividades como um todo, para isso
-será aplicada uma razão ponderada composta por cada requisito das
-duas etapas.
-
+Escolha do “melhor modelo”
+Razão ponderada entre os resultados obtidos
 
 \vspace{1.2cm}
 \chapter{Contribuições e Limitações}
 \section{Contribuições}
-Esta pesquisa apresenta uma alternativa às opções de identificação
-biométrica disponíveis atualmente, por ser uma técnica não intrusiva, pode ser
-aplicada os mais diversos ramos da industria sem comprometer a
-individualidade e a privacidade dos usuários.
-
-O setor automobilístico, de transportes e seguros são os mais
-propensos à adotarem esta técnica pois auxilia na prevenção à roubos e fraudes.
+Modelo para geração e validação de bioassinaturas veiculares
+Alternativa aos métodos de identificação intrusivos
 \section{Limitações}
-Esta pesquisa possui uma restrição quanto ao tipo de veículo
-que foi utilizado pois este quesito é definido pela base de dados
-escolhida. Além disso, não há controle sobre a idade, condições
-fisiológicas e nem a experiência de condução dos motoristas que foram selecionados.
-
-Outro ponto que é merece ser destacado são as condições ambientais sob
-as quais os dados foram captados, o tipo e as condições das vias que
-foram escolhidas pelos responsáveis do conjunto de dados.
+Restrição a um tipo de veículo
+Limitação a motoristas experientes
+Não há classificação das rotas
 
 \pagebreak
 
@@ -935,3 +874,5 @@ foram escolhidas pelos responsáveis do conjunto de dados.
 %%% mode: latex
 %%% TeX-master: t
 %%% End:
+
+\message{ !name(trabalho_final.tex) !offset(-878) }

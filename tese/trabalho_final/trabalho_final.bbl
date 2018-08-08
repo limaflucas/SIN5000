@@ -5,23 +5,64 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[Al-Sultan, Al-Bayatti e Zedan 2013]{Al-Sultan20134264}
+\abntrefinfo{Al-Sultan, Al-Bayatti e Zedan}{AL-SULTAN; AL-BAYATTI; ZEDAN}{2013}
+{AL-SULTAN, S.; AL-BAYATTI, A.; ZEDAN, H. Context-aware driver behavior
+  detection system in intelligent transportation systems.
+\emph{IEEE Transactions on Vehicular Technology}, v.~62, n.~9, p. 4264--4275,
+  2013.}
+
+\bibitem[Chong \textit{et al.} 2013]{Chong2013207}
+\abntrefinfo{Chong \textit{et al.}}{CHONG \textit{et al.}}{2013}
+{CHONG, L.; ABBAS, M.; FLINTSCH, A. M.; HIGGS, B. A rule-based neural network
+  approach to model driver naturalistic behavior in traffic.
+\emph{Transportation Research Part C: Emerging Technologies}, v.~32, p.
+  207--223, 2013.}
+
 \bibitem[DENATRAN 2018]{DENATRANfrotaabr2018}
 \abntrefinfo{DENATRAN}{DENATRAN}{2018}
-{DENATRAN. \emph{01 - Frota por UF e Tipo de Veículo}. 2018.
-Acessado em 01 de Julho de 2018.
-Dispon{\'\i}vel em:
-  \url{https://www.denatran.gov.br/estatistica/635-frota-2018}.}
+{DENATRAN. \emph{01 - Frota por UF e Tipo de Veículo}. 2018.}
 
 \bibitem[Fuller 2005]{Fuller2005461}
 \abntrefinfo{Fuller}{FULLER}{2005}
 {FULLER, R. Towards a general theory of driver behaviour.
 \emph{Accident Analysis and Prevention}, v.~37, n.~3, p. 461--472, 2005.}
 
-\bibitem[IBGE 2017]{IBGEjulho2018}
-\abntrefinfo{IBGE}{IBGE}{2017}
-{IBGE. \emph{Tabelas de estimativas para 1º de julho de 2017}. 2017.
-Acessado em 01 de Julho de 2018.
-Dispon{\'\i}vel em:
-  \url{https://www.ibge.gov.br/estatisticas-novoportal/sociais/populacao/9103-estimativas-de-populacao.html?=&t=resultados}.}
+\bibitem[Gindele, Brechtel e Dillmann 2015]{Gindele201569}
+\abntrefinfo{Gindele, Brechtel e Dillmann}{GINDELE; BRECHTEL; DILLMANN}{2015}
+{GINDELE, T.; BRECHTEL, S.; DILLMANN, R. Learning driver behavior models from
+  traffic observations for decision making and planning.
+\emph{IEEE Intelligent Transportation Systems Magazine}, v.~7, n.~1, p. 69--79,
+  2015.}
+
+\bibitem[Lee e Jang 2017]{Lee2017}
+\abntrefinfo{Lee e Jang}{LEE; JANG}{2017}
+{LEE, J.; JANG, K. A framework for evaluating aggressive driving behaviors
+  based on in-vehicle driving records.
+\emph{Transportation Research Part F: Traffic Psychology and Behaviour}, 2017.}
+
+\bibitem[Liang e Lee 2014]{Liang2014146}
+\abntrefinfo{Liang e Lee}{LIANG; LEE}{2014}
+{LIANG, Y.; LEE, J. A hybrid bayesian network approach to detect driver
+  cognitive distraction.
+\emph{Transportation Research Part C: Emerging Technologies}, v.~38, p.
+  146--155, 2014.}
+
+\bibitem[Liang, Lee e Reyes 2007]{Liang20071}
+\abntrefinfo{Liang, Lee e Reyes}{LIANG; LEE; REYES}{2007}
+{LIANG, Y.; LEE, J.; REYES, M. Nonintrusive detection of driver cognitive
+  distraction in real time using bayesian networks.
+\emph{Transportation Research Record}, n.~2018, p.~1--8, 2007.}
+
+\bibitem[Liu \textit{et al.} 2018]{Liu2018}
+\abntrefinfo{Liu \textit{et al.}}{LIU \textit{et al.}}{2018}
+{LIU, H.; TANIGUCHI, T.; TAKENAKA, K.; BANDO, T. Defect-repairable latent
+  feature extraction of driving behavior via a deep sparse autoencoder.
+\emph{Sensors (Switzerland)}, v.~18, n.~2, 2018.}
+
+\bibitem[Nandakumar, Jain e Nagar 2008]{Nandakumar2008}
+\abntrefinfo{Nandakumar, Jain e Nagar}{NANDAKUMAR; JAIN; NAGAR}{2008}
+{NANDAKUMAR, K.; JAIN, A.; NAGAR, A. Biometric template security.
+\emph{Eurasip Journal on Advances in Signal Processing}, v.~2008, 2008.}
 
 \end{thebibliography}

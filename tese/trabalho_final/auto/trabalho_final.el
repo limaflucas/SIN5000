@@ -24,6 +24,9 @@
     "footmisc"
     "backref"
     "abntex2cite")
+   (LaTeX-add-labels
+    "fig:cronograma"
+    "chap:avaliacao")
    (LaTeX-add-bibliographies
     "referencias")
    (LaTeX-add-color-definecolors
